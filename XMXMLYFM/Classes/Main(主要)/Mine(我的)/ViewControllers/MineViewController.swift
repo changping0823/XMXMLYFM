@@ -140,7 +140,11 @@ extension MineViewController{
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffsety = scrollView.contentOffset.y
+        
         print(contentOffsety)
+        print(contentOffsety)
+        print(contentOffsety)
+        
         /// 是否显示 shadowImage(分割线)
         self.navigationController?.navigationBar.showShadow = (contentOffsety > bgHeight - XMNavHeight) ? true : false
         
