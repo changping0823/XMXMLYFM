@@ -10,5 +10,6 @@ pod 'Kingfisher'
 pod 'SwiftyJSON'
 pod 'HandyJSON'
 pod 'SnapKit'
+pod 'SVProgressHUD'
 
 end

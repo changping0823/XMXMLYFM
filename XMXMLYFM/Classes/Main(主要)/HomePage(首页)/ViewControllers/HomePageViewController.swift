@@ -76,6 +76,7 @@ class HomePageViewController: XMBaseViewController ,UICollectionViewDataSource,U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "XMFindItemCell", for: indexPath) as! XMFindItemCell;
         let vc = viewControllers[indexPath.row]
+        self.addChildViewController(vc);
         vc.view.frame = CGRect(x:0,y:0,width:XMScreenWidth,height:XMScreenHeight - XMToolBarH - XMTabBarH - XMNavHeight)
         cell.content = vc.view
         return cell;

@@ -137,7 +137,6 @@ extension MineViewController{
     }
     
     
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffsety = scrollView.contentOffset.y
         

@@ -4,7 +4,7 @@ HandyJSON is a framework written in Swift which to make converting model objects
 
 Compared with others, the most significant feature of HandyJSON is that it does not require the objects inherit from NSObject(**not using KVC but reflection**), neither implements a 'mapping' function(**write value to memory to achieve property assignment**).
 
-HandyJSON is totally depend on the memory layout rules infered from Swift runtime code. We are watching it and will follow every bit if it change. 
+HandyJSON is totally depend on the memory layout rules infered from Swift runtime code. We are watching it and will follow every bit if it change.
 
 [![Build Status](https://travis-ci.org/alibaba/HandyJSON.svg?branch=master)](https://travis-ci.org/alibaba/HandyJSON)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -28,7 +28,7 @@ class BasicTypes: HandyJSON {
 }
 
 let jsonString = "{\"doubleOptional\":1.1,\"stringImplicitlyUnwrapped\":\"hello\",\"int\":1}"
-if let object = JSONDeserializer<BasicTypes>.deserializeFrom(json: jsonString) {
+if let object = BasicTypes.deserialize(from: jsonString) {
     print(object.int)
     print(object.doubleOptional!)
     print(object.stringImplicitlyUnwrapped)
@@ -100,7 +100,7 @@ An overview of types supported can be found at file: [BasicTypes.swift](./HandyJ
 
 **To use with Swift 2.x using == 0.4.0**
 
-**To use with Swift 3.x using >= 1.5.2**
+**To use with Swift 3.x using >= 1.7.1**
 
 For Legacy Swift support, take a look at the [swift2 branch](https://github.com/alibaba/HandyJSON/tree/master_for_swift_2x).
 
@@ -109,7 +109,7 @@ For Legacy Swift support, take a look at the [swift2 branch](https://github.com/
 Add the following line to your `Podfile`:
 
 ```
-pod 'HandyJSON', '~> 1.5.2'
+pod 'HandyJSON', '~> 1.7.1'
 ```
 
 Then, run the following command:
@@ -123,7 +123,7 @@ $ pod install
 You can add a dependency on `HandyJSON` by adding the following line to your `Cartfile`:
 
 ```
-github "alibaba/HandyJSON" ~> 1.5.2
+github "alibaba/HandyJSON" ~> 1.7.1
 ```
 
 ## Manually
@@ -167,7 +167,7 @@ class BasicTypes: HandyJSON {
 }
 
 let jsonString = "{\"doubleOptional\":1.1,\"stringImplicitlyUnwrapped\":\"hello\",\"int\":1}"
-if let object = JSONDeserializer<BasicTypes>.deserializeFrom(json: jsonString) {
+if let object = BasicTypes.deserialize(from: jsonString) {
     // …
 }
 ```
@@ -184,7 +184,7 @@ struct BasicTypes: HandyJSON {
 }
 
 let jsonString = "{\"doubleOptional\":1.1,\"stringImplicitlyUnwrapped\":\"hello\",\"int\":1}"
-if let object = JSONDeserializer<BasicTypes>.deserializeFrom(json: jsonString) {
+if let object = BasicTypes.deserialize(from: jsonString) {
     // …
 }
 ```
@@ -208,7 +208,7 @@ struct Animal: HandyJSON {
 }
 
 let jsonString = "{\"type\":\"cat\",\"name\":\"Tom\"}"
-if let animal = JSONDeserializer<Animal>.deserializeFrom(json: jsonString) {
+if let animal = Animal.deserialize(from: jsonString) {
     print(animal.type?.rawValue)
 }
 ```
@@ -248,7 +248,7 @@ object.nsString = "nsStringValue"
 
 let jsonString = object.toJSONString()!
 
-if let object = JSONDeserializer<BasicTypes>.deserializeFrom(json: jsonString) {
+if let object = BasicTypes.deserialize(from: jsonString) {
     // ...
 }
 ```
@@ -267,7 +267,7 @@ class Cat: HandyJSON {
 
 let jsonString = "{\"code\":200,\"msg\":\"success\",\"data\":{\"cat\":{\"id\":12345,\"name\":\"Kitty\"}}}"
 
-if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString, designatedPath: "data.cat") {
+if let cat = Cat.deserialize(from: jsonString, designatedPath: "data.cat") {
     print(cat.name)
 }
 ```
@@ -294,7 +294,7 @@ class Composition: HandyJSON {
 
 let jsonString = "{\"num\":12345,\"comp1\":{\"aInt\":1,\"aString\":\"aaaaa\"},\"comp2\":{\"aInt\":2,\"aString\":\"bbbbb\"}}"
 
-if let composition = JSONDeserializer<Composition>.deserializeFrom(json: jsonString) {
+if let composition = Composition.deserialize(from: jsonString) {
     print(composition)
 }
 ```
@@ -319,7 +319,7 @@ class Cat: Animal {
 
 let jsonString = "{\"id\":12345,\"color\":\"black\",\"name\":\"cat\"}"
 
-if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
+if let cat = Cat.deserialize(from: jsonString) {
     print(cat)
 }
 ```
@@ -337,7 +337,7 @@ class Cat: HandyJSON {
 }
 
 let jsonArrayString: String? = "[{\"name\":\"Bob\",\"id\":\"1\"}, {\"name\":\"Lily\",\"id\":\"2\"}, {\"name\":\"Lucy\",\"id\":\"3\"}]"
-if let cats = JSONDeserializer<Cat>.deserializeModelArrayFrom(json: jsonArrayString) {
+if let cats = [Cat].deserialize(from: jsonArrayString) {
     cats.forEach({ (cat) in
         // ...
     })
@@ -381,7 +381,7 @@ class Cat: HandyJSON {
 
 let jsonString = "{\"cat_id\":12345,\"name\":\"Kitty\",\"parent\":\"Tom/Lily\"}"
 
-if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
+if let cat = Cat.deserialize(from: jsonString) {
     print(cat.id)
     print(cat.parent)
 }
@@ -412,7 +412,7 @@ class Cat: HandyJSON {
 
 let jsonString = "{\"name\":\"cat\",\"id\":\"12345\"}"
 
-if let cat = JSONDeserializer<Cat>.deserializeFrom(json: jsonString) {
+if let cat = Cat.deserialize(from: jsonString) {
     print(cat)
 }
 ```
@@ -463,14 +463,6 @@ print(object.toJSONString(prettyPrint: true)!) // serialize to pretty JSON strin
 ## Mapping And Excluding
 
 It’s all like what we do on deserialization. A property which is excluded, it will not take part in neither deserialization nor serialization. And the mapper items define both the deserializing rules and serializing rules. Refer to the usage above.
-
-# To Do
-
-* Improve testcases
-
-* Improve error handling
-
-* Simplify the API naming
 
 # License
 

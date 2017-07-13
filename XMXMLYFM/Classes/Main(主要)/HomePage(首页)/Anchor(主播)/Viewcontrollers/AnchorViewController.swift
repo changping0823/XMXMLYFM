@@ -138,6 +138,9 @@ extension AnchorViewController {
         return UIEdgeInsetsMake(0, self.space, 0, self.space)
         
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(DetailsViewController(), animated: true)
+    }
     
 }
 

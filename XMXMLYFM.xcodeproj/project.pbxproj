@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B1856AEBCDD48D24214E958 /* Pods_XMXMLYFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEC34403B466402AB6795A3 /* Pods_XMXMLYFM.framework */; };
+		6D2077E01EF367240008C1D9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2077DF1EF367240008C1D9 /* DetailsViewController.swift */; };
 		6D56A0A41E139FBE001CF395 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56A0A21E139FBE001CF395 /* SubscribeViewController.swift */; };
 		6D56A0A61E13A00C001CF395 /* SubscribeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56A0A51E13A00C001CF395 /* SubscribeAPI.swift */; };
 		6D56A0E01E13A17D001CF395 /* AnchorRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D56A0AA1E13A17D001CF395 /* AnchorRecommend.swift */; };
@@ -91,6 +92,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D2077DF1EF367240008C1D9 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6D56A0A21E139FBE001CF395 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		6D56A0A51E13A00C001CF395 /* SubscribeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeAPI.swift; sourceTree = "<group>"; };
 		6D56A0AA1E13A17D001CF395 /* AnchorRecommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorRecommend.swift; sourceTree = "<group>"; };
@@ -657,6 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				6DBFF49F1DF7A916006E63CE /* ViewController.swift */,
+				6D2077DF1EF367240008C1D9 /* DetailsViewController.swift */,
 				6DBFF4C81DF7F53B006E63CE /* XMBaseViewController.swift */,
 			);
 			path = Others;
@@ -1028,6 +1031,7 @@
 				6D56A0E11E13A17D001CF395 /* AnchorViewController.swift in Sources */,
 				6D56A0EB1E13A17D001CF395 /* RecommendCell.swift in Sources */,
 				6D56A1071E13BB9D001CF395 /* FindModel.swift in Sources */,
+				6D2077E01EF367240008C1D9 /* DetailsViewController.swift in Sources */,
 				6D56A0FA1E13A17D001CF395 /* XMFindToolBar.swift in Sources */,
 				6D56A1091E13CC9E001CF395 /* UIButton+Extension.swift in Sources */,
 				6D5D68141E14AF56000D497B /* UIImage+Extension.swift in Sources */,
@@ -1200,6 +1204,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1209,7 +1214,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1223,6 +1228,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79NPB5RAK5;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = XMXMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jay.XMXMLYFM;
@@ -1241,11 +1247,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79NPB5RAK5;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = XMXMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jay.XMXMLYFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "XMXMLYFM/Classes/Tools(工具)/Category/XMXMLYFM-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
