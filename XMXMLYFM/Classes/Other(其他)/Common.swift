@@ -16,7 +16,7 @@ let XMScreenWidth  = UIScreen.main.bounds.width
 /// 屏幕宽高比（宽/高）
 let XMScreenScale = XMScreenWidth/XMScreenHeight
 
-// 屏幕高度
+// 导航条高度
 let XMNavHeight : CGFloat = 64
 
 

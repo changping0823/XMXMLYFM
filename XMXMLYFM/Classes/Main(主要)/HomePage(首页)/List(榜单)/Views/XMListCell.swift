@@ -71,11 +71,11 @@ class XMListCell: UITableViewCell {
                   completionHandler: nil)
         
         self.titleLabel.text = self.programList.title
-        let result1 = self.programList.firstKResults?[0]
-        let result2 = self.programList.firstKResults?[1]
+//        let result1 = self.programList.firstKResults?[0]
+//        let result2 = self.programList.firstKResults?[1]
         
-        self.detailLabel1.text = "1 " + (result1?.title)!
-        self.detailLabel2.text = "2 " + (result2?.title)!
+//        self.detailLabel1.text = "1 " + (result1?.title)!
+//        self.detailLabel2.text = "2 " + (result2?.title)!
     }
     
 

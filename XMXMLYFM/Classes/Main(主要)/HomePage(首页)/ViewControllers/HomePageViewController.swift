@@ -62,6 +62,7 @@ class HomePageViewController: XMBaseViewController ,UICollectionViewDataSource,U
         layout.minimumInteritemSpacing = 0   //左右间距
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
         self.view.addSubview(self.collectionView!);
+
         
     }
     

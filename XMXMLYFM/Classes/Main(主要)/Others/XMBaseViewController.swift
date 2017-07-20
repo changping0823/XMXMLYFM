@@ -13,7 +13,7 @@ class XMBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        automaticallyAdjustsScrollViewInsets = true
+//        automaticallyAdjustsScrollViewInsets = false
         self.view.backgroundColor = UIColor.white
         self.showBackButton(show: true)
         

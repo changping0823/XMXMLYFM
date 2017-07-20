@@ -10,10 +10,12 @@ import UIKit
 import SwiftyJSON
 import HandyJSON
 
-class ClassifyViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
+class ClassifyViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     var tableView  : UITableView!
     var headerView : UIImageView!
+    var collectionView : UICollectionView!
+    
     
     var listArr: Array<CategoriesList?> = []
     
@@ -31,23 +33,27 @@ class ClassifyViewController: UIViewController , UITableViewDelegate , UITableVi
         self.headerView = UIImageView()
         self.headerView.frame = CGRect(x:0,y:0,width:XMScreenWidth,height:200)
         
+        let flowLayout = UICollectionViewFlowLayout.init()
+        flowLayout.itemSize = CGSize(width:(XMScreenWidth - 1)/2, height:40)
+        flowLayout.minimumLineSpacing = 1
+        flowLayout.minimumInteritemSpacing = 0
 
-        self.tableView = UITableView(self.tableView = UITableView(frame:self.view.frame, style:UITableViewStyle.grouped))
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        self.tableView.tableHeaderView = self.headerView
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-        self.tableView.register(ClassifyCell.self, forCellReuseIdentifier: "ClassifyCell")
-        self.view.addSubview(self.tableView)
+        self.collectionView = UICollectionView.init(frame: self.view.bounds, collectionViewLayout: flowLayout);
+        self.collectionView.backgroundColor = RGBA(r: 234, g: 234, b: 234, a: 1)
+
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.register(ClassifyItem.self, forCellWithReuseIdentifier: "ClassifyItem")
+        self.collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader")
+
+        self.view.addSubview(self.collectionView)
         
-        
-        self.refreshDataSource()
-        
-        self.tableView.snp.makeConstraints { (make) -> Void in
+        self.collectionView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
 
-    
+        self.refreshDataSource()
+
     }
 
     //请求数据
@@ -57,9 +63,10 @@ class ClassifyViewController: UIViewController , UITableViewDelegate , UITableVi
             self.listArr = self.categories.list!
             
             let firstItem = self.categories.list?.first
-            self.headerView .xm_setImageWithUrl(url: (firstItem?.coverPath)! ,placeholder:"")
+            self.listArr .remove(at: 0)
+//            self.headerView.xm_setImageWithUrl(url: (firstItem?.coverPath)! ,placeholder:"")
             
-            self.tableView.reloadData()
+            self.collectionView.reloadData()
         }
     }
 
@@ -69,53 +76,58 @@ class ClassifyViewController: UIViewController , UITableViewDelegate , UITableVi
 
 extension ClassifyViewController {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         let sec = self.listArr.count / 6
         let sub = self.listArr.count % 6
         return sub > 0 ? sec + 1 : sec
     }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame:CGRect(x:0,y:0,width:XMScreenWidth,height:10))
-        view.backgroundColor = RGBA(r: 234, g: 234, b: 234, a: 1)
-        return view
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let sec: NSInteger = self.listArr.count / 6
         if section < sec {
-            return 3
+            return 6
         } else {
-            return (self.listArr.count % 6) / 2
+            return (self.listArr.count % 6)
         }
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ClassifyCell", for: indexPath) as! ClassifyCell
-        
-        cell.leftModel = self.itemModel(with: indexPath, isLeft: true)
-        cell.rightModel = self.itemModel(with: indexPath, isLeft: false)
-        
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClassifyItem", for: indexPath) as! ClassifyItem
+        cell.categoriesList = self.listArr[indexPath.section * 6 + indexPath.row ];
         return cell
     }
     
     
-    
-    
-    
-    
-    func itemModel(with indexPath: IndexPath, isLeft: Bool) -> CategoriesList? {
-        var index = indexPath.section * 6
-        index += indexPath.row * 2
-        index = isLeft ? index + 1 : index + 2
-        if listArr.count <= index {
-            return nil
-        }
-        return listArr[index]
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width:XMScreenWidth/2, height:40)
     }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView{
+
+        var footer = UICollectionReusableView()
+        if kind == UICollectionElementKindSectionFooter {
+            footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath as IndexPath)
+        }
+        return footer
+        
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width:XMScreenWidth , height : 10)
+    }
+
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
+        return UIEdgeInsetsMake(5, 10, 5, 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let categories = self.listArr[indexPath.section * 6 + indexPath.row];
+        let detailVC = ClassifyDetailViewController()
+        detailVC.categoryId = (categories?.id)!
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
+    }
+
+    
     
     
 }
