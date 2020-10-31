@@ -11,14 +11,12 @@ import UIKit
 
 // tag的累积值
 let kTagPlus: NSInteger = 100
-let XMTabBarH: CGFloat = 49
-
 
 class XMTabBarController: UITabBarController {
 
     lazy var bgImageView:UIImageView = {
         let imgView = UIImageView()
-        imgView.frame = CGRect(x:0,y:XMScreenHeight - XMTabBarH,width:XMScreenWidth,height:XMTabBarH)
+        imgView.frame = CGRect(x:0,y:XMScreenHeight - (tabBarHeight + safeAreaBottom),width:XMScreenWidth,height:tabBarHeight + safeAreaBottom)
         imgView.image = UIImage(named:"tabbar_bg")
         imgView.isUserInteractionEnabled = true
         return imgView
@@ -63,9 +61,9 @@ extension XMTabBarController {
         for index in 0..<5 {
             let btn = UIButton(type: .custom)
             if index == 2 {
-                btn.frame = CGRect(x: XMScreenWidth * 0.5 - XMTabBarH * 0.5, y: -10, width: XMTabBarH + 10, height: XMTabBarH + 10)
+                btn.frame = CGRect(x: XMScreenWidth * 0.5 - tabBarHeight * 0.5, y: -10, width: width, height: tabBarHeight + 10)
             } else {
-                btn.frame = CGRect(x: width * CGFloat(index), y: 0, width: width, height: XMTabBarH)
+                btn.frame = CGRect(x: width * CGFloat(index), y: 0, width: width, height: tabBarHeight)
             }
             btn.tag = kTagPlus + index
             btn.adjustsImageWhenHighlighted = false

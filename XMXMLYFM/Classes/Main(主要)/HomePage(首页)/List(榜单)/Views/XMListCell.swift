@@ -24,10 +24,12 @@ class XMListCell: UITableViewCell {
     }
     
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+//    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        self.selectionStyle = UITableViewCellSelectionStyle.none
+        self.selectionStyle = UITableViewCell.SelectionStyle.none
         
         self.coverImage = UIImageView()
         self.coverImage.backgroundColor = RandomColor
@@ -64,11 +66,12 @@ class XMListCell: UITableViewCell {
         let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                           KingfisherOptionsInfoItem.targetCache(cache)]
         
-        coverImage.kf.setImage(with: resource,
-                        placeholder: UIImage(named:"find_usercover"),
-                            options: ptionsInfo,
-                      progressBlock: nil,
-                  completionHandler: nil)
+//        coverImage.kf.setImage(with: resource,
+//                        placeholder: UIImage(named:"find_usercover"),
+//                            options: ptionsInfo,
+//                      progressBlock: nil,
+//                  completionHandler: nil)
+        coverImage.xm_setImageWithUrl(url: (programList?.coverPath)!, placeholder: "find_usercover")
         
         self.titleLabel.text = self.programList.title
 //        let result1 = self.programList.firstKResults?[0]

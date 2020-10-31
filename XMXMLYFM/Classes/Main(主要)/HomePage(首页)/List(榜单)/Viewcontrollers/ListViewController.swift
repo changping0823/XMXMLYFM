@@ -29,7 +29,7 @@ class ListViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
         
         
-        self.tableView = UITableView(frame:CGRect(x:0,y:0,width:0,height:0), style:UITableViewStyle.grouped)
+        self.tableView = UITableView(frame:CGRect(x:0,y:0,width:0,height:0), style:UITableView.Style.grouped)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableHeaderView = self.headerView

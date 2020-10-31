@@ -49,8 +49,8 @@ class RecommentSectionView: UIView {
         self.moreButton.setTitleColor(UIColor.lightGray, for: .normal)
         self.moreButton.titleLabel?.font = UIFont.systemFont(ofSize: 12.0)
         self.moreButton.setImage(UIImage(named:"cell_arrow"), for: .normal)
-        self.moreButton.titleEdgeInsets = UIEdgeInsetsMake(0, -25, 0, 0)
-        self.moreButton.imageEdgeInsets = UIEdgeInsetsMake(0, 25, 0, 0)
+        self.moreButton.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -25, bottom: 0, right: 0)
+        self.moreButton.imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 25, bottom: 0, right: 0)
         
         self.addSubview(self.moreButton)
         

@@ -22,18 +22,19 @@ class XMBaseViewController: UIViewController {
     open func showBackButton(show:Bool) {
         if show {
             var image = UIImage(named:"icon_back_h")
-            image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItemStyle.done,target: self,action:#selector(backBarButtonItemClick))
+//            image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+//            image = image?.renderingMode
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItem.Style.done,target: self,action:#selector(backBarButtonItemClick))
         }else{
             let image = UIImage(named:"")
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItemStyle.done,target: nil,action:nil)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItem.Style.done,target: nil,action:nil)
         }
     }
     
     
     
     
-     func backBarButtonItemClick() {
+    @objc func backBarButtonItemClick() {
         if (self.navigationController?.topViewController == self) {
             self.navigationController?.popViewController(animated: true)
         }

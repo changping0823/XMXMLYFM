@@ -8,6 +8,17 @@
 
 import UIKit
 
+/// 状态栏高度
+let statusHeight = UIApplication.shared.statusBarFrame.height
+
+/// 根据状态栏高度判断是否为异形屏
+let isAlien : Bool = statusHeight > 0
+/// 底部安全区域高度
+let safeAreaBottom : CGFloat = isAlien ? 34:0
+
+let tabBarHeight : CGFloat = 49
+
+
 // 屏幕宽度
 let XMScreenHeight = UIScreen.main.bounds.height
 // 屏幕高度
@@ -18,7 +29,6 @@ let XMScreenScale = XMScreenWidth/XMScreenHeight
 
 // 导航条高度
 let XMNavHeight : CGFloat = 64
-
 
 
 let RandomColor = UIColor.init(red:CGFloat(arc4random_uniform(255))/CGFloat(255.0),

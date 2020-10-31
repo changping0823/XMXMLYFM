@@ -30,7 +30,9 @@ class ClassifyDetailViewController: UIViewController {
         
         ClassifyTool.requestClassifyCategory(categoryId: categoryId) { (result, error) in
             
-            let jsonString = result.toJSONValue()
+//            let jsonString = result.toJSONValue()
+//            let jsonString = result.js
+            
 //            self.categoryArray = JSONDeserializer<Categories>.deserializeModelArrayFrom(json: HandyJSON.toJSONValue(result as! HandyJSON))
 ////            self.categoryArray = JSONDeserializer<Categories>.deserializeFrom(json: JSON(result).description)
 

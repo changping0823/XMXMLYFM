@@ -44,7 +44,8 @@ class ClassifyViewController: UIViewController ,UICollectionViewDelegate,UIColle
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(ClassifyItem.self, forCellWithReuseIdentifier: "ClassifyItem")
-        self.collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader")
+//        UICollectionElementKindSectionHeader
+        self.collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "SectionHeader")
 
         self.view.addSubview(self.collectionView)
         
@@ -103,7 +104,7 @@ extension ClassifyViewController {
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView{
 
         var footer = UICollectionReusableView()
-        if kind == UICollectionElementKindSectionFooter {
+        if kind == UICollectionView.elementKindSectionFooter {
             footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath as IndexPath)
         }
         return footer
@@ -116,7 +117,7 @@ extension ClassifyViewController {
 
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
-        return UIEdgeInsetsMake(5, 10, 5, 10)
+        return UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: 10)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

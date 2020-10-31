@@ -37,7 +37,7 @@ class XMCycleScrollView: UIView ,UICollectionViewDelegate,UICollectionViewDataSo
         self.layout.itemSize = CGSize(width: XMScreenWidth, height: self.height);
         self.layout.minimumInteritemSpacing = 0   //左右间距
         self.layout.minimumLineSpacing = 0         //上下间距
-        self.layout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        self.layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         
         let rect = CGRect.init(x: 0, y: 0, width: XMScreenWidth, height: self.height)
         
@@ -53,7 +53,7 @@ class XMCycleScrollView: UIView ,UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     
-    func timerSelector() {
+    @objc func timerSelector() {
         currentIndex += 1
         if currentIndex == self.imageUrls.count {
             currentIndex = 0
@@ -81,10 +81,10 @@ class XMCycleScrollView: UIView ,UICollectionViewDelegate,UICollectionViewDataSo
         
         self.timer = Timer.scheduledTimer(timeInterval: timeInterval,
                                                 target:self,
-                                              selector:#selector(XMCycleScrollView.timerSelector),
+                                                selector:#selector(XMCycleScrollView.timerSelector),
                                               userInfo:nil,
                                                repeats:true)
-        RunLoop.main.add(self.timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(self.timer, forMode: RunLoop.Mode.common)
     }
     
     func endTimer(){

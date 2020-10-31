@@ -28,7 +28,7 @@ class AnchorViewController: UIViewController,UICollectionViewDelegate,UICollecti
         self.layout = UICollectionViewFlowLayout()
         self.layout.minimumLineSpacing = self.space       //上下间距
         self.layout.minimumInteritemSpacing = self.space   //左右间距
-        self.layout.scrollDirection = UICollectionViewScrollDirection.vertical
+        self.layout.scrollDirection = UICollectionView.ScrollDirection.vertical
         self.layout.headerReferenceSize = CGSize(width:XMScreenWidth,height:40);
         
         self.collectionView = UICollectionView(frame:CGRect.init(x:0,y:0,width:0,height:0), collectionViewLayout:self.layout);
@@ -36,8 +36,9 @@ class AnchorViewController: UIViewController,UICollectionViewDelegate,UICollecti
         self.collectionView.dataSource = self
         self.collectionView.backgroundColor = UIColor.white
         self.collectionView.register(AnchorItem.self, forCellWithReuseIdentifier:"AnchorItem")
-        self.collectionView.register(AnchorHeaderView.self,forSupplementaryViewOfKind:UICollectionElementKindSectionHeader, withReuseIdentifier:"headView")
-        self.collectionView.register(UICollectionReusableView.self,forSupplementaryViewOfKind:UICollectionElementKindSectionFooter, withReuseIdentifier:"footView")
+//        self.collectionView.register(AnchorHeaderView.self,forSupplementaryViewOfKind:UICollectionView.elementKindSectionHeaderelementKindSectionHeader, withReuseIdentifier:"headView")
+        self.collectionView.register(AnchorHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headView")
+        self.collectionView.register(UICollectionReusableView.self,forSupplementaryViewOfKind:UICollectionView.elementKindSectionFooter, withReuseIdentifier:"footView")
 
         self.view.addSubview(self.collectionView)
         
@@ -106,15 +107,15 @@ extension AnchorViewController {
         var header = AnchorHeaderView()
         var footer = UICollectionReusableView()
         
-        if kind == UICollectionElementKindSectionHeader{
+        if kind == UICollectionView.elementKindSectionHeader{
             header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headView", for: indexPath as IndexPath) as! AnchorHeaderView
-        }else if kind == UICollectionElementKindSectionFooter{
+        }else if kind == UICollectionView.elementKindSectionFooter{
             footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footView", for: indexPath)
             footer.backgroundColor = RGBA(r: 235, g: 235, b: 235, a: 1)
         }
         
         
-        if kind == UICollectionElementKindSectionHeader{
+        if kind == UICollectionView.elementKindSectionHeader{
             header.anchor = self.anchors[indexPath.section] as? Anchor
             return header
         }else{
@@ -135,8 +136,7 @@ extension AnchorViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(0, self.space, 0, self.space)
-        
+        return UIEdgeInsets.init(top: 0, left: self.space, bottom: 0, right: self.space)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.navigationController?.pushViewController(DetailsViewController(), animated: true)

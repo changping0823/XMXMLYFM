@@ -60,7 +60,7 @@ class HomePageViewController: XMBaseViewController ,UICollectionViewDataSource,U
         layout.itemSize = CGSize(width: XMScreenWidth, height: self.view.height - XMToolBarH);
         layout.minimumLineSpacing = 0        //上下间距
         layout.minimumInteritemSpacing = 0   //左右间距
-        layout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         self.view.addSubview(self.collectionView!);
 
         
@@ -77,8 +77,8 @@ class HomePageViewController: XMBaseViewController ,UICollectionViewDataSource,U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "XMFindItemCell", for: indexPath) as! XMFindItemCell;
         let vc = viewControllers[indexPath.row]
-        self.addChildViewController(vc);
-        vc.view.frame = CGRect(x:0,y:0,width:XMScreenWidth,height:XMScreenHeight - XMToolBarH - XMTabBarH - XMNavHeight)
+        self.addChild(vc);
+        vc.view.frame = CGRect(x:0,y:0,width:XMScreenWidth,height:XMScreenHeight - XMToolBarH - tabBarHeight - safeAreaBottom - XMNavHeight)
         cell.content = vc.view
         return cell;
     }

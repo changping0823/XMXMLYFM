@@ -23,14 +23,14 @@ extension UIButton {
                           KingfisherOptionsInfoItem.targetCache(cache)]
         
         
-        let image = UIImage(named:placeholder)
         
-        self.kf.setImage(with: resource,
-                          for: .normal,
-                  placeholder: image,
-                      options: ptionsInfo,
-                progressBlock: nil,
-            completionHandler: nil)
+//        self.kf.setImage(with: resource,
+//                          for: .normal,
+//                  placeholder: image,
+//                      options: ptionsInfo,
+//                progressBlock: nil,
+//            completionHandler: nil)
+        self.xm_setButtonImageWithUrl(url: url, placeholder: placeholder)
 
     }
     

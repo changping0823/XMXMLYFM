@@ -35,7 +35,8 @@ class XMFindToolBar: UIView ,UICollectionViewDataSource,UICollectionViewDelegate
         didSet {
             if (self.tabs != nil) {
                 let defaultSelectCell = IndexPath(row: selectedItem, section: 0)
-                self.collectionView?.selectItem(at: defaultSelectCell, animated: true, scrollPosition: UICollectionViewScrollPosition.left)
+//                self.collectionView?.selectItem(at: defaultSelectCell, animated: true, scrollPosition: UICollectionViewScrollPosition.left)
+                self.collectionView?.selectItem(at: defaultSelectCell, animated: true, scrollPosition: UICollectionView.ScrollPosition.left)
                 self.collectionView?.reloadData()
             }
         }
@@ -135,7 +136,7 @@ class XMFindToolBar: UIView ,UICollectionViewDataSource,UICollectionViewDelegate
         return cell;
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(0, 0, 0, 0)
+        return UIEdgeInsets.zero
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

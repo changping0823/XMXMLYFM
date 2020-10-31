@@ -86,12 +86,12 @@ class ClassifyItem: UICollectionViewCell {
         let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                           KingfisherOptionsInfoItem.targetCache(cache)]
         
-        leftImage.kf.setImage(with: resource,
-                              placeholder: UIImage(named:"find_usercover"),
-                              options: ptionsInfo,
-                              progressBlock: nil,
-                              completionHandler: nil)
-        
+//        leftImage.kf.setImage(with: resource,
+//                              placeholder: UIImage(named:"find_usercover"),
+//                              options: ptionsInfo,
+//                              progressBlock: nil,
+//                              completionHandler: nil)
+        leftImage.xm_setImageWithUrl(url: (categoriesList?.coverPath!)!, placeholder: "find_usercover")
         
         
         leftLabel.text = categoriesList?.title

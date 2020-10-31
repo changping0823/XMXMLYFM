@@ -20,11 +20,13 @@ class XMCycleItem: UICollectionViewCell {
             let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                               KingfisherOptionsInfoItem.targetCache(cache)]
             
-            self.imageView.kf.setImage(with: resource,
-                                placeholder: UIImage(named:"find_usercover"),
-                                    options: ptionsInfo,
-                              progressBlock: nil,
-                          completionHandler: nil)
+//            self.imageView.kf.setImage(with: resource,
+//                                placeholder: UIImage(named:"find_usercover"),
+//                                    options: ptionsInfo,
+//                              progressBlock: nil,
+//                          completionHandler: nil)
+//            self.imageView.kf.setImage(with: resource, placeholder: UIImage(named:"find_usercover"), options: ptionsInfo, progressBlock: nil, completionHandler: nil)
+            self.imageView.xm_setImageWithUrl(url: imageUrl!, placeholder: "find_usercover")
 
         }
     }

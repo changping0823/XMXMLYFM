@@ -17,14 +17,12 @@ extension UIImageView {
         let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                           KingfisherOptionsInfoItem.targetCache(cache)]
         
-        
         let image = UIImage(named:placeholder)
-        
-        self.kf.setImage(with: resource,
-                  placeholder: image,
-                      options: ptionsInfo,
-                progressBlock: nil,
-            completionHandler: nil)
+
+        self.kf.setImage(with: resource, placeholder: image, options: ptionsInfo, progressBlock: nil) { (reslt) in
+            
+        }
+
     }
 }
 

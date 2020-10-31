@@ -29,7 +29,8 @@ class LoginViewController: XMBaseViewController {
         self.title = "登录"
         
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"注册",style: UIBarButtonItemStyle.done,target: self,action:#selector(logonClick))
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"注册",style: UIBarButtonItem.Style.done,target: self,action:#selector(logonClick))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"注册",style: UIBarButtonItem.Style.done,target: self,action:#selector(logonClick))
         self.navigationItem.rightBarButtonItem?.tintColor = MAIN_COLOR
         
         self.zhanghao = createButton(tag: 110, title: "账号密码登录")
@@ -74,13 +75,13 @@ class LoginViewController: XMBaseViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         button.setTitle(title, for: .normal)
         button.tag = tag
-        button.addTarget(self, action: #selector(buttonClick(sender:)), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(buttonClick(sender:)), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button)
         return button
     }
     
     
-    func buttonClick(sender:UIButton) {
+    @objc func buttonClick(sender:UIButton) {
 
 ////        for button in self.buttons {
 ////            <#code#>
@@ -96,7 +97,7 @@ class LoginViewController: XMBaseViewController {
     
     
     
-    func logonClick(){
+    @objc func logonClick(){
         self.navigationController?.pushViewController(LogonViewController(), animated: true)
     }
     

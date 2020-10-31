@@ -57,11 +57,12 @@ class RecommendHeaderDiscovery: UIView {
             let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                               KingfisherOptionsInfoItem.targetCache(cache)]
             
-            imageView.kf.setImage(with: resource,
-                           placeholder: UIImage(named:"find_usercover"),
-                               options: ptionsInfo,
-                         progressBlock: nil,
-                     completionHandler: nil)
+//            imageView.kf.setImage(with: resource,
+//                           placeholder: UIImage(named:"find_usercover"),
+//                               options: ptionsInfo,
+//                         progressBlock: nil,
+//                     completionHandler: nil)
+            imageView.xm_setImageWithUrl(url: item.coverPath!, placeholder: "find_usercover")
             
             let titleLabel = UILabel()
             titleLabel.text = item.title

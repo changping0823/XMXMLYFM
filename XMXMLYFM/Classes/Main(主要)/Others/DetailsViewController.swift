@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-import SVProgressHUD
+//import SVProgressHUD
 
 /* ShareProtocol 用协议代替全局函数 */
 class DetailsViewController: XMBaseViewController,WKUIDelegate,WKNavigationDelegate,UINavigationControllerDelegate {
@@ -32,7 +32,7 @@ class DetailsViewController: XMBaseViewController,WKUIDelegate,WKNavigationDeleg
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        SVProgressHUD.dismiss()
+//        SVProgressHUD.dismiss()
     }
     func initWebView(){
         
@@ -40,7 +40,7 @@ class DetailsViewController: XMBaseViewController,WKUIDelegate,WKNavigationDeleg
         let url = URL(string: urlString)
         let request = URLRequest(url: url!)
         
-         SVProgressHUD.show(withStatus: "加载中")
+//         SVProgressHUD.show(withStatus: "加载中")
         
         self.webView = WKWebView(frame: self.view.frame)
         view.addSubview(webView)
@@ -52,7 +52,7 @@ class DetailsViewController: XMBaseViewController,WKUIDelegate,WKNavigationDeleg
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
-        SVProgressHUD.dismiss()
+//        SVProgressHUD.dismiss()
         print("加载完成")
     }
 

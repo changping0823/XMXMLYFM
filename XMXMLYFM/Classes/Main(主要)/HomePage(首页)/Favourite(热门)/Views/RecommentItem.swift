@@ -26,11 +26,12 @@ class RecommentItem: UIView {
             let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                               KingfisherOptionsInfoItem.targetCache(cache)]
             
-            self.coverImage.kf.setImage(with: resource,
-                                 placeholder:UIImage(named:"find_usercover"),
-                                     options: ptionsInfo,
-                               progressBlock: nil,
-                           completionHandler: nil)
+//            self.coverImage.kf.setImage(with: resource,
+//                                 placeholder:UIImage(named:"find_usercover"),
+//                                     options: ptionsInfo,
+//                               progressBlock: nil,
+//                           completionHandler: nil)
+            self.coverImage.xm_setImageWithUrl(url: (albumsList?.coverLarge)!, placeholder: "find_usercover")
             
             self.introLabel.text = albumsList?.trackTitle
             self.titleLabel.text = albumsList?.title
@@ -45,11 +46,12 @@ class RecommentItem: UIView {
             let ptionsInfo = [KingfisherOptionsInfoItem.transition(ImageTransition.fade(1)),
                               KingfisherOptionsInfoItem.targetCache(cache)]
             
-            self.coverImage.kf.setImage(with: resource,
-                                 placeholder: UIImage(named:"find_usercover"),
-                                     options: ptionsInfo,
-                               progressBlock: nil,
-                           completionHandler: nil)
+//            self.coverImage.kf.setImage(with: resource,
+//                                 placeholder: UIImage(named:"find_usercover"),
+//                                     options: ptionsInfo,
+//                               progressBlock: nil,
+//                           completionHandler: nil)
+            self.coverImage.xm_setImageWithUrl(url: (guessList?.coverLarge)!, placeholder: "find_usercover")
             
             self.introLabel.text = guessList?.trackTitle
             self.titleLabel.text = guessList?.title

@@ -50,7 +50,7 @@ class MineViewController: XMBaseViewController,UITableViewDataSource,UITableView
         
         
         
-        self.tableView = UITableView(frame:self.view.bounds,style: UITableViewStyle.plain)
+        self.tableView = UITableView(frame:self.view.bounds,style: UITableView.Style.plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableHeaderView = self.headerView
@@ -76,19 +76,18 @@ class MineViewController: XMBaseViewController,UITableViewDataSource,UITableView
         
         let rightItemImage = itemImage(name: "icon_setting-1")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image:rightItemImage,
-                                                                 style: UIBarButtonItemStyle.done,
+                                                                 style: UIBarButtonItem.Style.done,
                                                                  target: self,
                                                                  action:#selector(rightBarButtonItemClick))
     }
     func itemImage(name : String) -> UIImage? {
-        var image = UIImage(named:name)
-        image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        var image = UIImage(named:name)!.withRenderingMode(.alwaysOriginal)
         return image
     }
     
     
     
-    func rightBarButtonItemClick() {
+    @objc func rightBarButtonItemClick() {
         let nav = UINavigationController.init(rootViewController: LoginViewController())
         self.present(nav, animated: true, completion: nil)
     }
@@ -126,8 +125,8 @@ extension MineViewController{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MineCell", for: indexPath)
-        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         let dic = self.array[indexPath.section][indexPath.row]
         cell.imageView?.image = UIImage(named:dic["icon"]!)!

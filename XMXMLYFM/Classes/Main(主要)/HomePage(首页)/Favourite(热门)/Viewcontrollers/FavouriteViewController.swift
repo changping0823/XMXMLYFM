@@ -33,7 +33,7 @@ class FavouriteViewController: UIViewController , UITableViewDelegate,UITableVie
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(RecommendCell.self, forCellReuseIdentifier: "RecommendCell")
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.tableHeaderView = self.headerView
         self.view.addSubview(self.tableView)
         
@@ -47,7 +47,7 @@ class FavouriteViewController: UIViewController , UITableViewDelegate,UITableVie
             //小编推荐
             self.recommends = JSONDeserializer<Recommends>.deserializeFrom(json: JSON(result).description)
             self.headerView.focusImages = self.recommends.focusImages?.list as NSArray?
-            self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet, with: UITableViewRowAnimation.none)
+            self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet, with: UITableView.RowAnimation.none)
         }
         HomePageApi.requestHotAndGuess { (result, error) in
             self.hotAndGuess = JSONDeserializer<HotAndGuess>.deserializeFrom(json: JSON(result).description)
