@@ -1,19 +1,12 @@
-platform :ios, "10.0"
-use_frameworks!
+platform :ios, '10.0'
 
-target 'XMXMLYFM' do
+target 'SwiftProject' do
+  use_frameworks!
   
-  pod 'Alamofire' #网络请求
-  pod 'Moya'
-  pod 'Kingfisher'
+  pod 'Alamofire' #网络请求事件处理的框架。
+  pod 'SnapKit'   #自动布局框架，类似于Masonry。（推荐）
+  pod 'KakaJSON'  #JSON转Model
   pod 'SwiftyJSON'
-  pod 'HandyJSON'
-  pod 'KakaJSON'
-  
-  pod 'SnapKit'  #布局
-  
-  
-  pod 'JXSegmentedView'
+  pod 'Kingfisher'
   
 end
- 

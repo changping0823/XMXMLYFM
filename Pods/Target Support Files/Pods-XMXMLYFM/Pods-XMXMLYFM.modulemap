@@ -1,6 +1,0 @@
-framework module Pods_XMXMLYFM {
-  umbrella header "Pods-XMXMLYFM-umbrella.h"
-
-  export *
-  module * { export * }
-}
