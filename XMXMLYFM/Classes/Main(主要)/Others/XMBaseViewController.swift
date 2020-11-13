@@ -9,11 +9,9 @@
 import UIKit
 
 class XMBaseViewController: UIViewController {
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        automaticallyAdjustsScrollViewInsets = false
         self.view.backgroundColor = UIColor.white
         self.showBackButton(show: true)
         
@@ -24,10 +22,9 @@ class XMBaseViewController: UIViewController {
             var image = UIImage(named:"icon_back_h")
 //            image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
 //            image = image?.renderingMode
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItem.Style.done,target: self,action:#selector(backBarButtonItemClick))
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItem.Style.done,target: self,action: #selector(backBarButtonItemClick))
         }else{
-            let image = UIImage(named:"")
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:image,style: UIBarButtonItem.Style.done,target: nil,action:nil)
+            self.navigationItem.leftBarButtonItem = nil
         }
     }
     

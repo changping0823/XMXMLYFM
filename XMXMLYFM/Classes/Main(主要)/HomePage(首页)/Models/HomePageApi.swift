@@ -33,7 +33,7 @@ fileprivate let kAnchorRecommendAPI = "http://mobile.ximalaya.com/mobile/discove
 
 class HomePageApi: NSObject {
     
-    
+    /*
     /// 获取首页标题
     class func requestHomePageTabs(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()) {
         XMNetwrorkTool.shareInstance.xm_requestData(methodType: .POST, urlString: kHomePageTabs, parameters: nil) { (result, error) in
@@ -92,5 +92,6 @@ class HomePageApi: NSObject {
         }
     }
 
+ */
 
 }

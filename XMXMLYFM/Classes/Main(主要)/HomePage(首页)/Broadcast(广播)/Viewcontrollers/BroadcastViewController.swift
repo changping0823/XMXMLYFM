@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BroadcastViewController: UIViewController {
+class BroadcastViewController: HomeListBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

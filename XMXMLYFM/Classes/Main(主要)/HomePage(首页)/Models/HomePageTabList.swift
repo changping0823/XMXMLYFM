@@ -7,10 +7,10 @@
 //
 
 import UIKit
-
+import KakaJSON
 import HandyJSON
 
-class HomePageTabList: HandyJSON {
+class HomePageTabList: Convertible {
     var count : Int = 0
     var first : Int = 0
     var list : [HomePageTab]?
@@ -18,7 +18,7 @@ class HomePageTabList: HandyJSON {
     
 }
 
-class HomePageTab: HandyJSON {
+class HomePageTab: Convertible {
     var title : String?
     var contentType : String?
     

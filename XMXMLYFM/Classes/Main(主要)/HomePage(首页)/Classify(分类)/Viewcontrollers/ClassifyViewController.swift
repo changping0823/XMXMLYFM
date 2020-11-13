@@ -59,16 +59,16 @@ class ClassifyViewController: UIViewController ,UICollectionViewDelegate,UIColle
 
     //请求数据
     func refreshDataSource(){
-        HomePageApi.requestCategories { (result, error) in
-            self.categories = JSONDeserializer<Categories>.deserializeFrom(json: JSON(result).description)
-            self.listArr = self.categories.list!
-            
-            let firstItem = self.categories.list?.first
-            self.listArr .remove(at: 0)
-//            self.headerView.xm_setImageWithUrl(url: (firstItem?.coverPath)! ,placeholder:"")
-            
-            self.collectionView.reloadData()
-        }
+//        HomePageApi.requestCategories { (result, error) in
+//            self.categories = JSONDeserializer<Categories>.deserializeFrom(json: JSON(result).description)
+//            self.listArr = self.categories.list!
+//
+//            let firstItem = self.categories.list?.first
+//            self.listArr .remove(at: 0)
+////            self.headerView.xm_setImageWithUrl(url: (firstItem?.coverPath)! ,placeholder:"")
+//
+//            self.collectionView.reloadData()
+//        }
     }
 
 }

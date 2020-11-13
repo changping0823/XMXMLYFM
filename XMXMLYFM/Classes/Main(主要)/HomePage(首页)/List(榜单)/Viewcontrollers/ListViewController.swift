@@ -46,15 +46,15 @@ class ListViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
 
     func refreshDataSource() {
-        HomePageApi.requestRankingList{ (result,error) in
-            
-            let array = result?["datas"] as! Array<AnyObject>
-            self.listArr = JSONDeserializer<RankListModel>.deserializeModelArrayFrom(json: JSON(array).description)!
-            
-            self.focusImages = JSONDeserializer<RankFocusImages>.deserializeFrom(dict: result?["focusImages"] as! NSDictionary?)
-            self.headerView.listFocusImages = self.focusImages?.list as NSArray?
-            self.tableView.reloadData()
-        }
+//        HomePageApi.requestRankingList{ (result,error) in
+//            
+//            let array = result?["datas"] as! Array<AnyObject>
+//            self.listArr = JSONDeserializer<RankListModel>.deserializeModelArrayFrom(json: JSON(array).description)!
+//            
+//            self.focusImages = JSONDeserializer<RankFocusImages>.deserializeFrom(dict: result?["focusImages"] as! NSDictionary?)
+//            self.headerView.listFocusImages = self.focusImages?.list as NSArray?
+//            self.tableView.reloadData()
+//        }
     }
     
     override func didReceiveMemoryWarning() {

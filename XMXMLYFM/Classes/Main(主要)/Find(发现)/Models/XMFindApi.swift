@@ -16,9 +16,9 @@ fileprivate let kFindAPI = "http://mobile.ximalaya.com/mobile/discovery/v1/squar
 class XMFindApi: NSObject {
     /// 获取首页标题
     class func requestFind(_ finished:@escaping (_ result: AnyObject?, _ error: NSError?) -> ()) {
-        XMNetwrorkTool.shareInstance.xm_requestData(methodType: .GET, urlString: kFindAPI, parameters: nil) { (result, error) in
-            finished(result, error)
-        }
+//        XMNetwrorkTool.shareInstance.xm_requestData(methodType: .GET, urlString: kFindAPI, parameters: nil) { (result, error) in
+//            finished(result, error)
+//        }
     }
     
 }

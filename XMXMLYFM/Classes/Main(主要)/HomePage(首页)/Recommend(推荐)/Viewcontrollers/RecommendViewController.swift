@@ -21,9 +21,9 @@ class RecommendViewController: UIViewController {
     }
     
     func refreshDataSource(){
-        HomePageApi.requestTuiJian { (result, error) in
-            print("\(result)")
-        }
+//        HomePageApi.requestTuiJian { (result, error) in
+//            print("\(result)")
+//        }
     }
     
     

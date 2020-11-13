@@ -43,17 +43,17 @@ class FavouriteViewController: UIViewController , UITableViewDelegate,UITableVie
     
     //请求数据
     func refreshDataSource(){
-        HomePageApi.requestRecommends { (result, error) in
-            //小编推荐
-            self.recommends = JSONDeserializer<Recommends>.deserializeFrom(json: JSON(result).description)
-            self.headerView.focusImages = self.recommends.focusImages?.list as NSArray?
-            self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet, with: UITableView.RowAnimation.none)
-        }
-        HomePageApi.requestHotAndGuess { (result, error) in
-            self.hotAndGuess = JSONDeserializer<HotAndGuess>.deserializeFrom(json: JSON(result).description)
-            self.headerView.discoveryColumns = self.hotAndGuess.discoveryColumns
-            self.tableView.reloadData()
-        }
+//        HomePageApi.requestRecommends { (result, error) in
+//            //小编推荐
+//            self.recommends = JSONDeserializer<Recommends>.deserializeFrom(json: JSON(result).description)
+//            self.headerView.focusImages = self.recommends.focusImages?.list as NSArray?
+//            self.tableView.reloadSections(NSIndexSet(index: 0) as IndexSet, with: UITableView.RowAnimation.none)
+//        }
+//        HomePageApi.requestHotAndGuess { (result, error) in
+//            self.hotAndGuess = JSONDeserializer<HotAndGuess>.deserializeFrom(json: JSON(result).description)
+//            self.headerView.discoveryColumns = self.hotAndGuess.discoveryColumns
+//            self.tableView.reloadData()
+//        }
     }
     
     override func viewDidLayoutSubviews() {
