@@ -8,5 +8,6 @@ target 'SwiftProject' do
   pod 'KakaJSON'  #JSON转Model
   pod 'SwiftyJSON'
   pod 'Kingfisher'
+  pod 'JXSegmentedView'
   
 end
