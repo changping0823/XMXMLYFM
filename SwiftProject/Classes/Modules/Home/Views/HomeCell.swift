@@ -71,8 +71,6 @@ class HomeCell: UITableViewCell {
     @objc func zanbtnClick(sender:UIButton) {
         sender.isSelected = !sender.isSelected
         
-        
-        
         if sender.isSelected {
             sender.backgroundColor = .blue
         }else{

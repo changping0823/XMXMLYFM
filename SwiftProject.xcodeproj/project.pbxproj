@@ -26,6 +26,13 @@
 		76740E90255CFAD700F9A576 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E8F255CFAD700F9A576 /* User.swift */; };
 		76740E95255CFB8B00F9A576 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E94255CFB8B00F9A576 /* Comment.swift */; };
 		76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E9A255CFC7B00F9A576 /* HomeCell.swift */; };
+		76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E8FD256272850010ADC7 /* ListenViewController.swift */; };
+		76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E905256272940010ADC7 /* PlayViewController.swift */; };
+		76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90A256272A10010ADC7 /* FindViewController.swift */; };
+		76B2E910256277E70010ADC7 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */; };
+		76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92425628C730010ADC7 /* UIColor+Image.swift */; };
+		76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */; };
+		76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */; };
 		76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50BB255BB23200296E32 /* NetworkTool.swift */; };
 		76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50CB255C097E00296E32 /* HWNetworkingError.swift */; };
 		76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50D0255C0B2700296E32 /* HWMultipartData.swift */; };
@@ -74,6 +81,13 @@
 		76740E8F255CFAD700F9A576 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76740E94255CFB8B00F9A576 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		76740E9A255CFC7B00F9A576 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		76B2E8FD256272850010ADC7 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
+		76B2E905256272940010ADC7 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		76B2E90A256272A10010ADC7 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		76B2E92425628C730010ADC7 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
+		76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNavigationController+NavigationBar.swift"; sourceTree = "<group>"; };
 		76FB50BB255BB23200296E32 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		76FB50CB255C097E00296E32 /* HWNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWNetworkingError.swift; sourceTree = "<group>"; };
 		76FB50D0255C0B2700296E32 /* HWMultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWMultipartData.swift; sourceTree = "<group>"; };
@@ -206,6 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				7658846F255A3ADF009AE13D /* Home */,
+				76B2E8F7256271DA0010ADC7 /* Find(发现) */,
+				76B2E8F9256272240010ADC7 /* Play(播放) */,
+				76B2E8F8256272050010ADC7 /* Listen(我听) */,
 				76588470255A3ADF009AE13D /* Mine */,
 			);
 			path = Modules;
@@ -214,8 +231,8 @@
 		7658846F255A3ADF009AE13D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				76740E99255CFC6500F9A576 /* Views */,
 				76588499255A3D6C009AE13D /* ViewControllers */,
+				76740E99255CFC6500F9A576 /* Views */,
 				76740E77255CCE0C00F9A576 /* Models */,
 			);
 			path = Home;
@@ -232,6 +249,7 @@
 		76588471255A3ADF009AE13D /* Main(主要的) */ = {
 			isa = PBXGroup;
 			children = (
+				76B2E91825628B630010ADC7 /* Category */,
 				76FB50BA255BB20C00296E32 /* NetworkTool */,
 				76588472255A3ADF009AE13D /* ViewControllers */,
 				76588474255A3ADF009AE13D /* Views */,
@@ -262,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				765884AB255A3EE3009AE13D /* HomeViewController.swift */,
+				76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -290,6 +309,64 @@
 				76740E9A255CFC7B00F9A576 /* HomeCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		76B2E8F7256271DA0010ADC7 /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E8FA256272430010ADC7 /* ViewControllers */,
+			);
+			path = "Find(发现)";
+			sourceTree = "<group>";
+		};
+		76B2E8F8256272050010ADC7 /* Listen(我听) */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E8FC2562725E0010ADC7 /* ViewControllers */,
+			);
+			path = "Listen(我听)";
+			sourceTree = "<group>";
+		};
+		76B2E8F9256272240010ADC7 /* Play(播放) */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E8FB256272580010ADC7 /* ViewControllers */,
+			);
+			path = "Play(播放)";
+			sourceTree = "<group>";
+		};
+		76B2E8FA256272430010ADC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E90A256272A10010ADC7 /* FindViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		76B2E8FB256272580010ADC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E905256272940010ADC7 /* PlayViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		76B2E8FC2562725E0010ADC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E8FD256272850010ADC7 /* ListenViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		76B2E91825628B630010ADC7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				76B2E92425628C730010ADC7 /* UIColor+Image.swift */,
+				76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */,
+				76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		76FB50BA255BB20C00296E32 /* NetworkTool */ = {
@@ -493,16 +570,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B2E910256277E70010ADC7 /* HomeDetailViewController.swift in Sources */,
+				76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */,
 				76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */,
 				7658847A255A3ADF009AE13D /* AppDelegate.swift in Sources */,
+				76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */,
 				76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */,
+				76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */,
 				7658847B255A3ADF009AE13D /* SceneDelegate.swift in Sources */,
+				76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */,
 				76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */,
 				765884A4255A3DC5009AE13D /* BaseNavigationController.swift in Sources */,
 				765884B6255A3FB6009AE13D /* ViewController.swift in Sources */,
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
 				76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */,
 				765884B1255A3F12009AE13D /* MineViewController.swift in Sources */,
+				76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */,
+				76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */,
 				7658849C255A3DAD009AE13D /* BaseTabBarController.swift in Sources */,
 				76740E95255CFB8B00F9A576 /* Comment.swift in Sources */,
 				76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */,

@@ -10,7 +10,11 @@ import KakaJSON
 import SwiftyJSON
 import SnapKit
 
-class HomeViewController: BaseViewController {
+protocol DLNoNav {
+    
+}
+
+class HomeViewController: BaseViewController,DLNoNav {
 
     var tableView = UITableView()
     
@@ -18,7 +22,8 @@ class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.automaticallyAdjustsScrollViewInsets = false
+                
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(HomeCell.self, forCellReuseIdentifier: "HomeCell")
@@ -28,7 +33,7 @@ class HomeViewController: BaseViewController {
             make.edges.equalToSuperview()
         }
         
-        Network.GET(url: "http://m2.qiushibaike.com/article/list/imgrank").success { (response) in
+        Network.GET(url: "http://m2.qiushibaike.com/article/list/imgrank?page=2").success { (response) in
             
             let jsons:[Any] = JSON(response)["items"].arrayObject!
             
@@ -46,7 +51,13 @@ class HomeViewController: BaseViewController {
 
 
 extension HomeViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(HomeDetailViewController(), animated: true)
+    }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+    }
 }
 
 
@@ -74,3 +85,4 @@ extension HomeViewController: HomeCellDelegate{
         print(sender)
     }
 }
+
