@@ -9,5 +9,6 @@ target 'SwiftProject' do
   pod 'SwiftyJSON'
   pod 'Kingfisher'
   pod 'JXSegmentedView'
+  pod 'ProgressHUD'
   
 end

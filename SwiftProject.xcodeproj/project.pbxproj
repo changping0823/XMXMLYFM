@@ -14,7 +14,6 @@
 		76588477255A3ADF009AE13D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76588467255A3ADF009AE13D /* Preview Assets.xcassets */; };
 		76588478255A3ADF009AE13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76588468255A3ADF009AE13D /* LaunchScreen.storyboard */; };
 		7658847A255A3ADF009AE13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658846C255A3ADF009AE13D /* AppDelegate.swift */; };
-		7658847B255A3ADF009AE13D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658846D255A3ADF009AE13D /* SceneDelegate.swift */; };
 		7658847C255A3ADF009AE13D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76588473255A3ADF009AE13D /* BaseViewController.swift */; };
 		7658847D255A3ADF009AE13D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76588475255A3ADF009AE13D /* ContentView.swift */; };
 		7658849C255A3DAD009AE13D /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658849B255A3DAD009AE13D /* BaseTabBarController.swift */; };
@@ -22,6 +21,12 @@
 		765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765884AB255A3EE3009AE13D /* HomeViewController.swift */; };
 		765884B1255A3F12009AE13D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765884B0255A3F12009AE13D /* MineViewController.swift */; };
 		765884B6255A3FB6009AE13D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765884B5255A3FB6009AE13D /* ViewController.swift */; };
+		765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20CB263A95520056D80F /* OAuthViewController.swift */; };
+		765C20D3263A95CE0056D80F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20D2263A95CE0056D80F /* Account.swift */; };
+		765C20DF263A96130056D80F /* UserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20DE263A96130056D80F /* UserAccountTool.swift */; };
+		7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672662F26311FBB0053267F /* HomeBaseListViewController.swift */; };
+		7672663526311FFF0053267F /* HomeFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672663426311FFF0053267F /* HomeFocusViewController.swift */; };
+		7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76726639263129310053267F /* HomeRecommendViewController.swift */; };
 		76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E78255CCE4900F9A576 /* HomeModel.swift */; };
 		76740E90255CFAD700F9A576 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E8F255CFAD700F9A576 /* User.swift */; };
 		76740E95255CFB8B00F9A576 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E94255CFB8B00F9A576 /* Comment.swift */; };
@@ -33,6 +38,7 @@
 		76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92425628C730010ADC7 /* UIColor+Image.swift */; };
 		76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */; };
 		76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */; };
+		76CBFFD2263BE260008157B7 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CBFFD1263BE260008157B7 /* UserAccountViewModel.swift */; };
 		76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50BB255BB23200296E32 /* NetworkTool.swift */; };
 		76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50CB255C097E00296E32 /* HWNetworkingError.swift */; };
 		76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50D0255C0B2700296E32 /* HWMultipartData.swift */; };
@@ -69,7 +75,6 @@
 		76588469255A3ADF009AE13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7658846A255A3ADF009AE13D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7658846C255A3ADF009AE13D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7658846D255A3ADF009AE13D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76588473255A3ADF009AE13D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		76588475255A3ADF009AE13D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7658849B255A3DAD009AE13D /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
@@ -77,6 +82,12 @@
 		765884AB255A3EE3009AE13D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		765884B0255A3F12009AE13D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		765884B5255A3FB6009AE13D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		765C20CB263A95520056D80F /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		765C20D2263A95CE0056D80F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		765C20DE263A96130056D80F /* UserAccountTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountTool.swift; sourceTree = "<group>"; };
+		7672662F26311FBB0053267F /* HomeBaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseListViewController.swift; sourceTree = "<group>"; };
+		7672663426311FFF0053267F /* HomeFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFocusViewController.swift; sourceTree = "<group>"; };
+		76726639263129310053267F /* HomeRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendViewController.swift; sourceTree = "<group>"; };
 		76740E78255CCE4900F9A576 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		76740E8F255CFAD700F9A576 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76740E94255CFB8B00F9A576 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -88,6 +99,7 @@
 		76B2E92425628C730010ADC7 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNavigationController+NavigationBar.swift"; sourceTree = "<group>"; };
+		76CBFFD1263BE260008157B7 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
 		76FB50BB255BB23200296E32 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		76FB50CB255C097E00296E32 /* HWNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWNetworkingError.swift; sourceTree = "<group>"; };
 		76FB50D0255C0B2700296E32 /* HWMultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWMultipartData.swift; sourceTree = "<group>"; };
@@ -211,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				7658846C255A3ADF009AE13D /* AppDelegate.swift */,
-				7658846D255A3ADF009AE13D /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 		7658846E255A3ADF009AE13D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76CBFFC1263BD35D008157B7 /* 微博 */,
 				7658846F255A3ADF009AE13D /* Home */,
 				76B2E8F7256271DA0010ADC7 /* Find(发现) */,
 				76B2E8F9256272240010ADC7 /* Play(播放) */,
@@ -280,6 +292,9 @@
 			isa = PBXGroup;
 			children = (
 				765884AB255A3EE3009AE13D /* HomeViewController.swift */,
+				7672662F26311FBB0053267F /* HomeBaseListViewController.swift */,
+				7672663426311FFF0053267F /* HomeFocusViewController.swift */,
+				76726639263129310053267F /* HomeRecommendViewController.swift */,
 				76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */,
 			);
 			path = ViewControllers;
@@ -291,6 +306,41 @@
 				765884B0255A3F12009AE13D /* MineViewController.swift */,
 			);
 			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		765C20BF263A951D0056D80F /* OAuth(授权) */ = {
+			isa = PBXGroup;
+			children = (
+				765C20D1263A95B90056D80F /* ViewControllers */,
+				76CBFFD0263BE24F008157B7 /* ViewModels */,
+				765C20D0263A95AF0056D80F /* Models */,
+				765C20DD263A95F60056D80F /* Tools */,
+			);
+			path = "OAuth(授权)";
+			sourceTree = "<group>";
+		};
+		765C20D0263A95AF0056D80F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				765C20D2263A95CE0056D80F /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		765C20D1263A95B90056D80F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				765C20CB263A95520056D80F /* OAuthViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		765C20DD263A95F60056D80F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				765C20DE263A96130056D80F /* UserAccountTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		76740E77255CCE0C00F9A576 /* Models */ = {
@@ -367,6 +417,22 @@
 				76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		76CBFFC1263BD35D008157B7 /* 微博 */ = {
+			isa = PBXGroup;
+			children = (
+				765C20BF263A951D0056D80F /* OAuth(授权) */,
+			);
+			path = "微博";
+			sourceTree = "<group>";
+		};
+		76CBFFD0263BE24F008157B7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76CBFFD1263BE260008157B7 /* UserAccountViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		76FB50BA255BB20C00296E32 /* NetworkTool */ = {
@@ -574,22 +640,28 @@
 				76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */,
 				76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */,
 				7658847A255A3ADF009AE13D /* AppDelegate.swift in Sources */,
+				7672663526311FFF0053267F /* HomeFocusViewController.swift in Sources */,
 				76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */,
+				7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */,
 				76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */,
 				76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */,
-				7658847B255A3ADF009AE13D /* SceneDelegate.swift in Sources */,
 				76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */,
+				765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */,
 				76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */,
 				765884A4255A3DC5009AE13D /* BaseNavigationController.swift in Sources */,
 				765884B6255A3FB6009AE13D /* ViewController.swift in Sources */,
+				7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */,
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
 				76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */,
 				765884B1255A3F12009AE13D /* MineViewController.swift in Sources */,
+				765C20DF263A96130056D80F /* UserAccountTool.swift in Sources */,
 				76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */,
 				76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */,
 				7658849C255A3DAD009AE13D /* BaseTabBarController.swift in Sources */,
 				76740E95255CFB8B00F9A576 /* Comment.swift in Sources */,
 				76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */,
+				765C20D3263A95CE0056D80F /* Account.swift in Sources */,
+				76CBFFD2263BE260008157B7 /* UserAccountViewModel.swift in Sources */,
 				7658847D255A3ADF009AE13D /* ContentView.swift in Sources */,
 				765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */,
 				7658847C255A3ADF009AE13D /* BaseViewController.swift in Sources */,
