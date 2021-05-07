@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         
-        window?.rootViewController = OAuthViewController()
+//        window?.rootViewController = OAuthViewController()
         //根视图是登录页面
-//        let tabbar = BaseTabBarController()
-//        window?.rootViewController = tabbar
+        let tabbar = BaseTabBarController()
+        window?.rootViewController = tabbar
         window?.makeKeyAndVisible()
 
         return true

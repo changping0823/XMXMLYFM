@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		17D65A5B61EA6365C8C0808E /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6ABCD023AAA32A2A8879E7 /* Pods_SwiftProject.framework */; };
+		7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */; };
+		7625B5602643B58E00D38A6F /* WBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B55F2643B58E00D38A6F /* WBTabBarController.swift */; };
+		7625B5652643BA2F00D38A6F /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B5642643BA2F00D38A6F /* WBHomeViewController.swift */; };
 		76588401255A2D4E009AE13D /* SwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76588400255A2D4E009AE13D /* SwiftProjectTests.swift */; };
 		7658840C255A2D4E009AE13D /* SwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658840B255A2D4E009AE13D /* SwiftProjectUITests.swift */; };
 		76588476255A3ADF009AE13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76588465255A3ADF009AE13D /* Assets.xcassets */; };
@@ -22,8 +25,8 @@
 		765884B1255A3F12009AE13D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765884B0255A3F12009AE13D /* MineViewController.swift */; };
 		765884B6255A3FB6009AE13D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765884B5255A3FB6009AE13D /* ViewController.swift */; };
 		765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20CB263A95520056D80F /* OAuthViewController.swift */; };
-		765C20D3263A95CE0056D80F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20D2263A95CE0056D80F /* Account.swift */; };
-		765C20DF263A96130056D80F /* UserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20DE263A96130056D80F /* UserAccountTool.swift */; };
+		765C20D3263A95CE0056D80F /* WBAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20D2263A95CE0056D80F /* WBAccount.swift */; };
+		765C20DF263A96130056D80F /* WBUserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20DE263A96130056D80F /* WBUserAccountTool.swift */; };
 		7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672662F26311FBB0053267F /* HomeBaseListViewController.swift */; };
 		7672663526311FFF0053267F /* HomeFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672663426311FFF0053267F /* HomeFocusViewController.swift */; };
 		7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76726639263129310053267F /* HomeRecommendViewController.swift */; };
@@ -38,7 +41,7 @@
 		76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92425628C730010ADC7 /* UIColor+Image.swift */; };
 		76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */; };
 		76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */; };
-		76CBFFD2263BE260008157B7 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CBFFD1263BE260008157B7 /* UserAccountViewModel.swift */; };
+		76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CBFFD1263BE260008157B7 /* WBUserAccountViewModel.swift */; };
 		76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50BB255BB23200296E32 /* NetworkTool.swift */; };
 		76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50CB255C097E00296E32 /* HWNetworkingError.swift */; };
 		76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50D0255C0B2700296E32 /* HWMultipartData.swift */; };
@@ -63,6 +66,9 @@
 
 /* Begin PBXFileReference section */
 		38BA60AB81EA347336B5B790 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
+		7625B55F2643B58E00D38A6F /* WBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBarController.swift; sourceTree = "<group>"; };
+		7625B5642643BA2F00D38A6F /* WBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
 		765883E6255A2D4D009AE13D /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765883FC255A2D4E009AE13D /* SwiftProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76588400255A2D4E009AE13D /* SwiftProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectTests.swift; sourceTree = "<group>"; };
@@ -83,8 +89,8 @@
 		765884B0255A3F12009AE13D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		765884B5255A3FB6009AE13D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		765C20CB263A95520056D80F /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
-		765C20D2263A95CE0056D80F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		765C20DE263A96130056D80F /* UserAccountTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountTool.swift; sourceTree = "<group>"; };
+		765C20D2263A95CE0056D80F /* WBAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAccount.swift; sourceTree = "<group>"; };
+		765C20DE263A96130056D80F /* WBUserAccountTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUserAccountTool.swift; sourceTree = "<group>"; };
 		7672662F26311FBB0053267F /* HomeBaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseListViewController.swift; sourceTree = "<group>"; };
 		7672663426311FFF0053267F /* HomeFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFocusViewController.swift; sourceTree = "<group>"; };
 		76726639263129310053267F /* HomeRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +105,7 @@
 		76B2E92425628C730010ADC7 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNavigationController+NavigationBar.swift"; sourceTree = "<group>"; };
-		76CBFFD1263BE260008157B7 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
+		76CBFFD1263BE260008157B7 /* WBUserAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUserAccountViewModel.swift; sourceTree = "<group>"; };
 		76FB50BB255BB23200296E32 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		76FB50CB255C097E00296E32 /* HWNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWNetworkingError.swift; sourceTree = "<group>"; };
 		76FB50D0255C0B2700296E32 /* HWMultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWMultipartData.swift; sourceTree = "<group>"; };
@@ -322,7 +328,7 @@
 		765C20D0263A95AF0056D80F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				765C20D2263A95CE0056D80F /* Account.swift */,
+				765C20D2263A95CE0056D80F /* WBAccount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +337,9 @@
 			isa = PBXGroup;
 			children = (
 				765C20CB263A95520056D80F /* OAuthViewController.swift */,
+				7625B55F2643B58E00D38A6F /* WBTabBarController.swift */,
+				7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */,
+				7625B5642643BA2F00D38A6F /* WBHomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -338,7 +347,7 @@
 		765C20DD263A95F60056D80F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				765C20DE263A96130056D80F /* UserAccountTool.swift */,
+				765C20DE263A96130056D80F /* WBUserAccountTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -430,7 +439,7 @@
 		76CBFFD0263BE24F008157B7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				76CBFFD1263BE260008157B7 /* UserAccountViewModel.swift */,
+				76CBFFD1263BE260008157B7 /* WBUserAccountViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -640,6 +649,7 @@
 				76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */,
 				76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */,
 				7658847A255A3ADF009AE13D /* AppDelegate.swift in Sources */,
+				7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */,
 				7672663526311FFF0053267F /* HomeFocusViewController.swift in Sources */,
 				76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */,
 				7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */,
@@ -654,14 +664,16 @@
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
 				76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */,
 				765884B1255A3F12009AE13D /* MineViewController.swift in Sources */,
-				765C20DF263A96130056D80F /* UserAccountTool.swift in Sources */,
+				7625B5602643B58E00D38A6F /* WBTabBarController.swift in Sources */,
+				765C20DF263A96130056D80F /* WBUserAccountTool.swift in Sources */,
 				76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */,
+				7625B5652643BA2F00D38A6F /* WBHomeViewController.swift in Sources */,
 				76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */,
 				7658849C255A3DAD009AE13D /* BaseTabBarController.swift in Sources */,
 				76740E95255CFB8B00F9A576 /* Comment.swift in Sources */,
 				76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */,
-				765C20D3263A95CE0056D80F /* Account.swift in Sources */,
-				76CBFFD2263BE260008157B7 /* UserAccountViewModel.swift in Sources */,
+				765C20D3263A95CE0056D80F /* WBAccount.swift in Sources */,
+				76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */,
 				7658847D255A3ADF009AE13D /* ContentView.swift in Sources */,
 				765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */,
 				7658847C255A3ADF009AE13D /* BaseViewController.swift in Sources */,

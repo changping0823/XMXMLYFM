@@ -7,11 +7,11 @@
 
 import UIKit
 
-import UIKit
 import WebKit
 import ProgressHUD
+import KakaJSON
 
-class OAuthViewController: BaseViewController,WKNavigationDelegate {
+class OAuthViewController: WBBaseViewController,WKNavigationDelegate {
     let redirect_uri = "http://www.baidu.com"
     let client_id = "3212157982"
     let client_secret = "3f24b3b21f75d8cf5d4201dc3683167f"
@@ -85,8 +85,26 @@ class OAuthViewController: BaseViewController,WKNavigationDelegate {
                 "redirect_uri": redirect_uri
             ]
             Network.POST(url: url, parameters: params).success { (respone) in
-                print("登陆成功：%@",respone)
-                UIApplication.shared.keyWindow?.rootViewController = BaseTabBarController()
+                print("登陆成功:",respone)
+                
+                guard let dic = respone as? [String: AnyObject] else {
+                    return
+                }
+                let userAccount = WBAccount(dic: dic)
+                userAccount.saveAccount()
+
+                if WBUserAccountTool.shareUserAccount.isLogin {
+                    var viewControllers = self.navigationController?.viewControllers
+                    viewControllers?.removeLast()
+                    viewControllers?.append(WBTabBarController())
+                    self.navigationController?.viewControllers = viewControllers!
+                }else{
+//                    userAccount
+                }
+                
+                
+
+//                UIApplication.shared.keyWindow?.rootViewController = BaseTabBarController()
             }.failed { (error) in
                 print("登陆失败：%@",error)
             }
