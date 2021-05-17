@@ -81,43 +81,6 @@ class HomeViewController: BaseViewController,DLNoNav {
 
 
 
-//extension HomeViewController: UITableViewDelegate{
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.navigationController?.pushViewController(HomeDetailViewController(), animated: true)
-//    }
-//    
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//
-//    }
-//}
-//
-//
-//extension HomeViewController: UITableViewDataSource{
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.items.count
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell: HomeCell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
-//        cell.setModel(model: self.items[indexPath.row])
-//        cell.delegate = self
-//        return cell
-//        
-//    }
-//    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
-//}
-//
-//
-//extension HomeViewController: HomeCellDelegate{
-//    func zanAction(_ sender: UIButton) {
-//        print(sender)
-//    }
-//}
-
-
 extension HomeViewController : JXSegmentedViewDelegate{
     
 }

@@ -34,6 +34,14 @@
 		76740E90255CFAD700F9A576 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E8F255CFAD700F9A576 /* User.swift */; };
 		76740E95255CFB8B00F9A576 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E94255CFB8B00F9A576 /* Comment.swift */; };
 		76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E9A255CFC7B00F9A576 /* HomeCell.swift */; };
+		767FEAEB264E11760004F11C /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEAEA264E11760004F11C /* WBStatus.swift */; };
+		767FEAF3264E11C60004F11C /* WBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEAF2264E11C60004F11C /* WBUser.swift */; };
+		767FEAF8264E12250004F11C /* WBStatusPictureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEAF7264E12250004F11C /* WBStatusPictureInfo.swift */; };
+		767FEAFE264E1A2A0004F11C /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEAFD264E1A2A0004F11C /* WBStatusCell.swift */; };
+		767FEB06264E1C300004F11C /* WBStatusUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB05264E1C300004F11C /* WBStatusUserView.swift */; };
+		767FEB0E264E235E0004F11C /* WBStatusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB0D264E235E0004F11C /* WBStatusContentView.swift */; };
+		767FEB13264E23710004F11C /* WBStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB12264E23710004F11C /* WBStatusToolBar.swift */; };
+		767FEB18264E4D050004F11C /* NSDate+WBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB17264E4D050004F11C /* NSDate+WBExtension.swift */; };
 		76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E8FD256272850010ADC7 /* ListenViewController.swift */; };
 		76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E905256272940010ADC7 /* PlayViewController.swift */; };
 		76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90A256272A10010ADC7 /* FindViewController.swift */; };
@@ -42,6 +50,9 @@
 		76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */; };
 		76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */; };
 		76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CBFFD1263BE260008157B7 /* WBUserAccountViewModel.swift */; };
+		76DBE0D2264CCC910035D845 /* WBBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBE0D1264CCC910035D845 /* WBBaseListViewController.swift */; };
+		76DBE0D7264CCCBF0035D845 /* WBFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBE0D6264CCCBF0035D845 /* WBFocusViewController.swift */; };
+		76DBE0DC264CCCD40035D845 /* WBRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBE0DB264CCCD40035D845 /* WBRecommendViewController.swift */; };
 		76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50BB255BB23200296E32 /* NetworkTool.swift */; };
 		76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50CB255C097E00296E32 /* HWNetworkingError.swift */; };
 		76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB50D0255C0B2700296E32 /* HWMultipartData.swift */; };
@@ -98,6 +109,14 @@
 		76740E8F255CFAD700F9A576 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76740E94255CFB8B00F9A576 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		76740E9A255CFC7B00F9A576 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		767FEAEA264E11760004F11C /* WBStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
+		767FEAF2264E11C60004F11C /* WBUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUser.swift; sourceTree = "<group>"; };
+		767FEAF7264E12250004F11C /* WBStatusPictureInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusPictureInfo.swift; sourceTree = "<group>"; };
+		767FEAFD264E1A2A0004F11C /* WBStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
+		767FEB05264E1C300004F11C /* WBStatusUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusUserView.swift; sourceTree = "<group>"; };
+		767FEB0D264E235E0004F11C /* WBStatusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusContentView.swift; sourceTree = "<group>"; };
+		767FEB12264E23710004F11C /* WBStatusToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusToolBar.swift; sourceTree = "<group>"; };
+		767FEB17264E4D050004F11C /* NSDate+WBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+WBExtension.swift"; sourceTree = "<group>"; };
 		76B2E8FD256272850010ADC7 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		76B2E905256272940010ADC7 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		76B2E90A256272A10010ADC7 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +125,9 @@
 		76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNavigationController+NavigationBar.swift"; sourceTree = "<group>"; };
 		76CBFFD1263BE260008157B7 /* WBUserAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUserAccountViewModel.swift; sourceTree = "<group>"; };
+		76DBE0D1264CCC910035D845 /* WBBaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseListViewController.swift; sourceTree = "<group>"; };
+		76DBE0D6264CCCBF0035D845 /* WBFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBFocusViewController.swift; sourceTree = "<group>"; };
+		76DBE0DB264CCCD40035D845 /* WBRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBRecommendViewController.swift; sourceTree = "<group>"; };
 		76FB50BB255BB23200296E32 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		76FB50CB255C097E00296E32 /* HWNetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWNetworkingError.swift; sourceTree = "<group>"; };
 		76FB50D0255C0B2700296E32 /* HWMultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWMultipartData.swift; sourceTree = "<group>"; };
@@ -317,10 +339,7 @@
 		765C20BF263A951D0056D80F /* OAuth(授权) */ = {
 			isa = PBXGroup;
 			children = (
-				765C20D1263A95B90056D80F /* ViewControllers */,
-				76CBFFD0263BE24F008157B7 /* ViewModels */,
-				765C20D0263A95AF0056D80F /* Models */,
-				765C20DD263A95F60056D80F /* Tools */,
+				765C20CB263A95520056D80F /* OAuthViewController.swift */,
 			);
 			path = "OAuth(授权)";
 			sourceTree = "<group>";
@@ -329,6 +348,9 @@
 			isa = PBXGroup;
 			children = (
 				765C20D2263A95CE0056D80F /* WBAccount.swift */,
+				767FEAEA264E11760004F11C /* WBStatus.swift */,
+				767FEAF2264E11C60004F11C /* WBUser.swift */,
+				767FEAF7264E12250004F11C /* WBStatusPictureInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -336,10 +358,13 @@
 		765C20D1263A95B90056D80F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				765C20CB263A95520056D80F /* OAuthViewController.swift */,
 				7625B55F2643B58E00D38A6F /* WBTabBarController.swift */,
 				7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */,
 				7625B5642643BA2F00D38A6F /* WBHomeViewController.swift */,
+				76DBE0D1264CCC910035D845 /* WBBaseListViewController.swift */,
+				76DBE0D6264CCCBF0035D845 /* WBFocusViewController.swift */,
+				76DBE0DB264CCCD40035D845 /* WBRecommendViewController.swift */,
+				765C20BF263A951D0056D80F /* OAuth(授权) */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -348,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				765C20DE263A96130056D80F /* WBUserAccountTool.swift */,
+				767FEB17264E4D050004F11C /* NSDate+WBExtension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -366,6 +392,17 @@
 			isa = PBXGroup;
 			children = (
 				76740E9A255CFC7B00F9A576 /* HomeCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		767FEAFC264E19F80004F11C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				767FEAFD264E1A2A0004F11C /* WBStatusCell.swift */,
+				767FEB05264E1C300004F11C /* WBStatusUserView.swift */,
+				767FEB0D264E235E0004F11C /* WBStatusContentView.swift */,
+				767FEB12264E23710004F11C /* WBStatusToolBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,7 +468,11 @@
 		76CBFFC1263BD35D008157B7 /* 微博 */ = {
 			isa = PBXGroup;
 			children = (
-				765C20BF263A951D0056D80F /* OAuth(授权) */,
+				765C20D1263A95B90056D80F /* ViewControllers */,
+				76CBFFD0263BE24F008157B7 /* ViewModels */,
+				767FEAFC264E19F80004F11C /* Views */,
+				765C20D0263A95AF0056D80F /* Models */,
+				765C20DD263A95F60056D80F /* Tools */,
 			);
 			path = "微博";
 			sourceTree = "<group>";
@@ -646,7 +687,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B2E910256277E70010ADC7 /* HomeDetailViewController.swift in Sources */,
+				767FEAF8264E12250004F11C /* WBStatusPictureInfo.swift in Sources */,
+				767FEAEB264E11760004F11C /* WBStatus.swift in Sources */,
 				76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */,
+				767FEB13264E23710004F11C /* WBStatusToolBar.swift in Sources */,
 				76FB50CC255C097E00296E32 /* HWNetworkingError.swift in Sources */,
 				7658847A255A3ADF009AE13D /* AppDelegate.swift in Sources */,
 				7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */,
@@ -655,16 +699,23 @@
 				7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */,
 				76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */,
 				76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */,
+				76DBE0DC264CCCD40035D845 /* WBRecommendViewController.swift in Sources */,
 				76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */,
 				765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */,
+				76DBE0D2264CCC910035D845 /* WBBaseListViewController.swift in Sources */,
+				767FEB06264E1C300004F11C /* WBStatusUserView.swift in Sources */,
 				76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */,
 				765884A4255A3DC5009AE13D /* BaseNavigationController.swift in Sources */,
 				765884B6255A3FB6009AE13D /* ViewController.swift in Sources */,
+				767FEAF3264E11C60004F11C /* WBUser.swift in Sources */,
 				7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */,
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
+				76DBE0D7264CCCBF0035D845 /* WBFocusViewController.swift in Sources */,
 				76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */,
 				765884B1255A3F12009AE13D /* MineViewController.swift in Sources */,
 				7625B5602643B58E00D38A6F /* WBTabBarController.swift in Sources */,
+				767FEAFE264E1A2A0004F11C /* WBStatusCell.swift in Sources */,
+				767FEB0E264E235E0004F11C /* WBStatusContentView.swift in Sources */,
 				765C20DF263A96130056D80F /* WBUserAccountTool.swift in Sources */,
 				76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */,
 				7625B5652643BA2F00D38A6F /* WBHomeViewController.swift in Sources */,
@@ -674,6 +725,7 @@
 				76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */,
 				765C20D3263A95CE0056D80F /* WBAccount.swift in Sources */,
 				76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */,
+				767FEB18264E4D050004F11C /* NSDate+WBExtension.swift in Sources */,
 				7658847D255A3ADF009AE13D /* ContentView.swift in Sources */,
 				765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */,
 				7658847C255A3ADF009AE13D /* BaseViewController.swift in Sources */,
