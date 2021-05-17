@@ -40,7 +40,7 @@ class WBStatusUserView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var status: WBStatus? {
+    var status: Status? {
         didSet {
             let url = URL(string: (status?.user?.profile_image_url)!)
             headerView.kf.setImage(with: url)

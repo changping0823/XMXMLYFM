@@ -24,7 +24,7 @@ class WBStatusContentView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var status: WBStatus? {
+    var status: Status? {
         didSet {
             
             contentLabel.text = status?.text

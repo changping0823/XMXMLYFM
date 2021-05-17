@@ -5,10 +5,10 @@
 //  Created by Charles on 2021/5/14.
 //
 
-import UIKit
+import KakaJSON
 
 ///  关注微博用户的模型
-class WBUser: NSObject {
+class WBUser: Convertible {
     //  用户id
    @objc var id: Int64 = 0
     //  用户昵称
@@ -20,14 +20,19 @@ class WBUser: NSObject {
     //  会员等级 1-6
    @objc var mbrank: Int = 0
     //  kvc构造函数
-    init(dic: [String: AnyObject]) {
-        super.init()
-        setValuesForKeys(dic)
-    }
+//    init(dic: [String: AnyObject]) {
+//        super.init()
+//        setValuesForKeys(dic)
+//    }
+//
+//    //  防止字段不匹配,导致崩溃
+//
+//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+//
+//    }
     
-    //  防止字段不匹配,导致崩溃
     
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        
-    }
+    required init() {}
+
+    
 }

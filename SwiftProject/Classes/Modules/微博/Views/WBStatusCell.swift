@@ -57,7 +57,7 @@ class WBStatusCell: UITableViewCell {
         }
     }
     //  处理微博数据的ViewModel
-    var status: WBStatus? {
+    var status: Status? {
         didSet {
             userView.status = status
             statusView.status = status

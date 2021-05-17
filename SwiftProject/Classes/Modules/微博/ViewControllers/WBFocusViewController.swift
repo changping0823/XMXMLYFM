@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import KakaJSON
 
 class WBFocusViewController: WBBaseListViewController {
-    lazy var dataArray: [WBStatus] = [WBStatus]()
+    lazy var dataArray: [Status] = [Status]()
 
 
     private lazy var tableView : UITableView = {
@@ -44,20 +45,8 @@ class WBFocusViewController: WBBaseListViewController {
                 print("字典格式不正确")
                 return
             }
-            for value in dicArray {
-                
-                //  字典转模型
-                let status = WBStatus(dic: value)
-                
-//                //  viewModel
-//                let statusViewModel = SUPStatusViewModel(status: status)
-//
-//                tempArray.append(statusViewModel)
-                print(status)
-                self.dataArray.append(status)
+            self.dataArray = modelArray(from: dicArray, Status.self)
 
-            }
-            
             self.tableView.reloadData()
             
         }.failed { (error) in

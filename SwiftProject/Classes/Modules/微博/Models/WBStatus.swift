@@ -19,7 +19,7 @@ class WBStatus: NSObject {
     //  处理后的来源数据
    @objc var sourceContent: String?
     //  关注用户的模型
-   @objc var user: WBUser?
+//   @objc var user: WBUser?
     //  转发数
    @objc var reposts_count: Int = 0
     //  评论数
@@ -51,7 +51,7 @@ class WBStatus: NSObject {
             }
             
             //  代码到此,字典没有问题
-            user = WBUser(dic: dic)
+//            user = WBUser(dic: dic)
         }else if key == "retweeted_status" {
             guard let dic = value as? [String: AnyObject] else {
                 return
