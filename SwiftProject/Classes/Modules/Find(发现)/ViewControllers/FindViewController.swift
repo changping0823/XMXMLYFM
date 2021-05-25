@@ -9,7 +9,7 @@ import UIKit
 
 class FindViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    let dataArray = ["微博demo"]
+    let dataArray = ["微博demo","斗鱼demo"]
     
     
     private lazy var tableView: UITableView = {
@@ -49,6 +49,10 @@ class FindViewController: BaseViewController,UITableViewDelegate,UITableViewData
         let title = self.dataArray[indexPath.row]
         if title == "微博demo" {
             self.pushWeiboViewController()
+        } else if title == "斗鱼demo" {
+            let tabbar = DYTabBarController()
+            navigationController?.navigationBar.isHidden = true
+            navigationController?.pushViewController(tabbar, animated: true)
         }
         
     }
@@ -57,6 +61,7 @@ class FindViewController: BaseViewController,UITableViewDelegate,UITableViewData
         /// 如果有授权信息去 WBTabBarController，否则去 OAuthViewController
         
         if WBUserAccountTool.shareUserAccount.isLogin {
+            
             self.navigationController?.pushViewController(WBTabBarController(), animated: true)
             return
         }

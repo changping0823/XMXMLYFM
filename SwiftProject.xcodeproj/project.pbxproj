@@ -43,6 +43,15 @@
 		767FEB0E264E235E0004F11C /* WBStatusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB0D264E235E0004F11C /* WBStatusContentView.swift */; };
 		767FEB13264E23710004F11C /* WBStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB12264E23710004F11C /* WBStatusToolBar.swift */; };
 		767FEB18264E4D050004F11C /* NSDate+WBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEB17264E4D050004F11C /* NSDate+WBExtension.swift */; };
+		7686CBFB265C9C9600352ED2 /* DYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CBFA265C9C9600352ED2 /* DYTabBarController.swift */; };
+		7686CBFD265C9DD600352ED2 /* douyu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7686CBFC265C9DD600352ED2 /* douyu.xcassets */; };
+		7686CBFF265C9E6B00352ED2 /* DYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CBFE265C9E6B00352ED2 /* DYBaseViewController.swift */; };
+		7686CC01265C9E8E00352ED2 /* DYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CC00265C9E8E00352ED2 /* DYNavigationController.swift */; };
+		7686CC03265C9F6400352ED2 /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CC02265C9F6400352ED2 /* DYHomeViewController.swift */; };
+		7686CC09265CA04A00352ED2 /* DYLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CC08265CA04A00352ED2 /* DYLiveViewController.swift */; };
+		7686CC0B265CA05600352ED2 /* DYFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CC0A265CA05600352ED2 /* DYFollowViewController.swift */; };
+		7686CC0D265CA06400352ED2 /* DYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CC0C265CA06400352ED2 /* DYProfileViewController.swift */; };
+		7686CC10265CA24B00352ED2 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686CC0F265CA24B00352ED2 /* UIBarButtonItem-Extension.swift */; };
 		76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E8FD256272850010ADC7 /* ListenViewController.swift */; };
 		76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E905256272940010ADC7 /* PlayViewController.swift */; };
 		76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90A256272A10010ADC7 /* FindViewController.swift */; };
@@ -119,6 +128,15 @@
 		767FEB0D264E235E0004F11C /* WBStatusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusContentView.swift; sourceTree = "<group>"; };
 		767FEB12264E23710004F11C /* WBStatusToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBStatusToolBar.swift; sourceTree = "<group>"; };
 		767FEB17264E4D050004F11C /* NSDate+WBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+WBExtension.swift"; sourceTree = "<group>"; };
+		7686CBFA265C9C9600352ED2 /* DYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabBarController.swift; sourceTree = "<group>"; };
+		7686CBFC265C9DD600352ED2 /* douyu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = douyu.xcassets; sourceTree = "<group>"; };
+		7686CBFE265C9E6B00352ED2 /* DYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseViewController.swift; sourceTree = "<group>"; };
+		7686CC00265C9E8E00352ED2 /* DYNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYNavigationController.swift; sourceTree = "<group>"; };
+		7686CC02265C9F6400352ED2 /* DYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeViewController.swift; sourceTree = "<group>"; };
+		7686CC08265CA04A00352ED2 /* DYLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLiveViewController.swift; sourceTree = "<group>"; };
+		7686CC0A265CA05600352ED2 /* DYFollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowViewController.swift; sourceTree = "<group>"; };
+		7686CC0C265CA06400352ED2 /* DYProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYProfileViewController.swift; sourceTree = "<group>"; };
+		7686CC0F265CA24B00352ED2 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		76B2E8FD256272850010ADC7 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		76B2E905256272940010ADC7 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		76B2E90A256272A10010ADC7 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +278,7 @@
 		7658846E255A3ADF009AE13D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7686CBF4265C9BFB00352ED2 /* 斗鱼 */,
 				76CBFFC1263BD35D008157B7 /* 微博 */,
 				7658846F255A3ADF009AE13D /* Home */,
 				76B2E8F7256271DA0010ADC7 /* Find(发现) */,
@@ -408,6 +427,102 @@
 				767FEB12264E23710004F11C /* WBStatusToolBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7686CBF4265C9BFB00352ED2 /* 斗鱼 */ = {
+			isa = PBXGroup;
+			children = (
+				7686CBF9265C9C6D00352ED2 /* Main */,
+				7686CBF5265C9C0E00352ED2 /* ViewControllers */,
+				7686CBF6265C9C1D00352ED2 /* Views */,
+				7686CBF7265C9C2A00352ED2 /* Models */,
+				7686CBF8265C9C3B00352ED2 /* Tools */,
+				7686CBFC265C9DD600352ED2 /* douyu.xcassets */,
+			);
+			path = "斗鱼";
+			sourceTree = "<group>";
+		};
+		7686CBF5265C9C0E00352ED2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC04265C9FDD00352ED2 /* Home */,
+				7686CC05265CA01B00352ED2 /* Live */,
+				7686CC06265CA02500352ED2 /* Follow */,
+				7686CC07265CA03000352ED2 /* Profile */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7686CBF6265C9C1D00352ED2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7686CBF7265C9C2A00352ED2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7686CBF8265C9C3B00352ED2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC0E265CA23300352ED2 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7686CBF9265C9C6D00352ED2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7686CBFA265C9C9600352ED2 /* DYTabBarController.swift */,
+				7686CBFE265C9E6B00352ED2 /* DYBaseViewController.swift */,
+				7686CC00265C9E8E00352ED2 /* DYNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7686CC04265C9FDD00352ED2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC02265C9F6400352ED2 /* DYHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7686CC05265CA01B00352ED2 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC08265CA04A00352ED2 /* DYLiveViewController.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		7686CC06265CA02500352ED2 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC0A265CA05600352ED2 /* DYFollowViewController.swift */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		7686CC07265CA03000352ED2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC0C265CA06400352ED2 /* DYProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7686CC0E265CA23300352ED2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7686CC0F265CA24B00352ED2 /* UIBarButtonItem-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		76B2E8F7256271DA0010ADC7 /* Find(发现) */ = {
@@ -622,6 +737,7 @@
 			files = (
 				76588478255A3ADF009AE13D /* LaunchScreen.storyboard in Resources */,
 				76588477255A3ADF009AE13D /* Preview Assets.xcassets in Resources */,
+				7686CBFD265C9DD600352ED2 /* douyu.xcassets in Resources */,
 				76588476255A3ADF009AE13D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,8 +819,12 @@
 				76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */,
 				76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */,
 				76DBE0DC264CCCD40035D845 /* WBRecommendViewController.swift in Sources */,
+				7686CC10265CA24B00352ED2 /* UIBarButtonItem-Extension.swift in Sources */,
+				7686CBFF265C9E6B00352ED2 /* DYBaseViewController.swift in Sources */,
+				7686CC0D265CA06400352ED2 /* DYProfileViewController.swift in Sources */,
 				76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */,
 				765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */,
+				7686CC09265CA04A00352ED2 /* DYLiveViewController.swift in Sources */,
 				76DBE0D2264CCC910035D845 /* WBBaseListViewController.swift in Sources */,
 				767FEB06264E1C300004F11C /* WBStatusUserView.swift in Sources */,
 				76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */,
@@ -714,6 +834,7 @@
 				7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */,
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
 				76DBE0D7264CCCBF0035D845 /* WBFocusViewController.swift in Sources */,
+				7686CC03265C9F6400352ED2 /* DYHomeViewController.swift in Sources */,
 				76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */,
 				765884B1255A3F12009AE13D /* MineViewController.swift in Sources */,
 				7625B5602643B58E00D38A6F /* WBTabBarController.swift in Sources */,
@@ -724,13 +845,16 @@
 				76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */,
 				7625B5652643BA2F00D38A6F /* WBHomeViewController.swift in Sources */,
 				76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */,
+				7686CC0B265CA05600352ED2 /* DYFollowViewController.swift in Sources */,
 				7658849C255A3DAD009AE13D /* BaseTabBarController.swift in Sources */,
 				76740E95255CFB8B00F9A576 /* Comment.swift in Sources */,
+				7686CBFB265C9C9600352ED2 /* DYTabBarController.swift in Sources */,
 				76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */,
 				765C20D3263A95CE0056D80F /* WBAccount.swift in Sources */,
 				76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */,
 				767FEB18264E4D050004F11C /* NSDate+WBExtension.swift in Sources */,
 				7658847D255A3ADF009AE13D /* ContentView.swift in Sources */,
+				7686CC01265C9E8E00352ED2 /* DYNavigationController.swift in Sources */,
 				765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */,
 				7658847C255A3ADF009AE13D /* BaseViewController.swift in Sources */,
 			);
@@ -830,7 +954,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -885,7 +1009,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

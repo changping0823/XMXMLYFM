@@ -48,27 +48,6 @@ class HomeViewController: BaseViewController,DLNoNav {
         segmentedView.listContainer = listContainerView
         view.addSubview(listContainerView)
                 
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//        tableView.register(HomeCell.self, forCellReuseIdentifier: "HomeCell")
-//        view.addSubview(tableView)
-//
-//        tableView.snp.makeConstraints { (make) in
-//            make.edges.equalToSuperview()
-//        }
-//
-//        Network.GET(url: "http://m2.qiushibaike.com/article/list/imgrank?page=2").success { (response) in
-//
-//            let jsons:[Any] = JSON(response)["items"].arrayObject!
-//
-//            let models = modelArray(from: jsons, HomeModel.self)
-//            self.items.append(contentsOf: models)
-//
-//            self.tableView.reloadData()
-//
-//        }.failed { (error) in
-//            print("--error--> \(error.localizedDescription)")
-//        }
     }
     
     override func viewDidLayoutSubviews() {
