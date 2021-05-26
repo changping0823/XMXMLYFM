@@ -18,8 +18,6 @@ protocol DLNoNav {
 class HomeViewController: BaseViewController,DLNoNav {
 
     let segmentedDataSource = JXSegmentedTitleDataSource()
-    var tableView = UITableView()
-    
     var segmentedView = JXSegmentedView()
     
     lazy var listContainerView:JXSegmentedListContainerView! = {
