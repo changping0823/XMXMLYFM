@@ -13,3 +13,11 @@ let kTabbarH : CGFloat = 44
 
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
+
+
+
+/// 导入头文件
+
+@_exported import KakaJSON
+@_exported import SnapKit
+@_exported import Kingfisher

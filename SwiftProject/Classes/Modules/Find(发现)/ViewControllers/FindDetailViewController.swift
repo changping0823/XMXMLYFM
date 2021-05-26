@@ -1,5 +1,5 @@
 //
-//  HomeDetailViewController.swift
+//  FindDetailViewController.swift
 //  SwiftProject
 //
 //  Created by Charles on 2020/11/16.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeDetailViewController: BaseViewController {
+class FindDetailViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

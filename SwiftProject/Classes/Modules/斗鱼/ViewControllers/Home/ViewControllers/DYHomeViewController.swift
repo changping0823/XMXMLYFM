@@ -56,7 +56,12 @@ extension DYHomeViewController {
         segmentedDataSource.titleSelectedColor = UIColor.black
         segmentedDataSource.itemWidth = 60
 
-        segmentedView.delegate = self
+
+        
+        let indicator = JXSegmentedIndicatorLineView()
+        indicator.indicatorWidth = 20
+        indicator.indicatorColor = UIColor.orange
+        segmentedView.indicators = [indicator]
         segmentedView.dataSource = segmentedDataSource
         view.addSubview(segmentedView)
         

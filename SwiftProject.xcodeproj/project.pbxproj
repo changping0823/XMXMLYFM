@@ -12,6 +12,13 @@
 		7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */; };
 		7625B5602643B58E00D38A6F /* WBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B55F2643B58E00D38A6F /* WBTabBarController.swift */; };
 		7625B5652643BA2F00D38A6F /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B5642643BA2F00D38A6F /* WBHomeViewController.swift */; };
+		763E67C3265E1F0E002EFE0A /* DYBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67C2265E1F0E002EFE0A /* DYBaseModel.swift */; };
+		763E67C5265E2775002EFE0A /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67C4265E2775002EFE0A /* NSDate+Extension.swift */; };
+		763E67C7265E2866002EFE0A /* DYAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67C6265E2866002EFE0A /* DYAnchorGroup.swift */; };
+		763E67C9265E4815002EFE0A /* DYHomeRecommentSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67C8265E4815002EFE0A /* DYHomeRecommentSectionHeaderView.swift */; };
+		763E67CB265E4E3A002EFE0A /* DYHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67CA265E4E3A002EFE0A /* DYHomeNormalCell.swift */; };
+		763E67CD265E4E4E002EFE0A /* DYHomePrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67CC265E4E4E002EFE0A /* DYHomePrettyCell.swift */; };
+		763E67CF265E52C5002EFE0A /* DYHomeBaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E67CE265E52C5002EFE0A /* DYHomeBaseViewCell.swift */; };
 		76588401255A2D4E009AE13D /* SwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76588400255A2D4E009AE13D /* SwiftProjectTests.swift */; };
 		7658840C255A2D4E009AE13D /* SwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7658840B255A2D4E009AE13D /* SwiftProjectUITests.swift */; };
 		76588476255A3ADF009AE13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76588465255A3ADF009AE13D /* Assets.xcassets */; };
@@ -28,9 +35,9 @@
 		765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20CB263A95520056D80F /* OAuthViewController.swift */; };
 		765C20D3263A95CE0056D80F /* WBAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20D2263A95CE0056D80F /* WBAccount.swift */; };
 		765C20DF263A96130056D80F /* WBUserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C20DE263A96130056D80F /* WBUserAccountTool.swift */; };
-		7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672662F26311FBB0053267F /* HomeBaseListViewController.swift */; };
-		7672663526311FFF0053267F /* HomeFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672663426311FFF0053267F /* HomeFocusViewController.swift */; };
-		7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76726639263129310053267F /* HomeRecommendViewController.swift */; };
+		7672663026311FBB0053267F /* FindBaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672662F26311FBB0053267F /* FindBaseListViewController.swift */; };
+		7672663526311FFF0053267F /* FindFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672663426311FFF0053267F /* FindFocusViewController.swift */; };
+		7672663A263129310053267F /* FindRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76726639263129310053267F /* FindRecommendViewController.swift */; };
 		76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E78255CCE4900F9A576 /* HomeModel.swift */; };
 		76740E90255CFAD700F9A576 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E8F255CFAD700F9A576 /* User.swift */; };
 		76740E95255CFB8B00F9A576 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76740E94255CFB8B00F9A576 /* Comment.swift */; };
@@ -66,7 +73,7 @@
 		76B2E8FE256272850010ADC7 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E8FD256272850010ADC7 /* ListenViewController.swift */; };
 		76B2E906256272940010ADC7 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E905256272940010ADC7 /* PlayViewController.swift */; };
 		76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90A256272A10010ADC7 /* FindViewController.swift */; };
-		76B2E910256277E70010ADC7 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */; };
+		76B2E910256277E70010ADC7 /* FindDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E90F256277E70010ADC7 /* FindDetailViewController.swift */; };
 		76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92425628C730010ADC7 /* UIColor+Image.swift */; };
 		76B2E92D25628E5C0010ADC7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */; };
 		76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */; };
@@ -102,6 +109,13 @@
 		7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
 		7625B55F2643B58E00D38A6F /* WBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBarController.swift; sourceTree = "<group>"; };
 		7625B5642643BA2F00D38A6F /* WBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
+		763E67C2265E1F0E002EFE0A /* DYBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseModel.swift; sourceTree = "<group>"; };
+		763E67C4265E2775002EFE0A /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		763E67C6265E2866002EFE0A /* DYAnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYAnchorGroup.swift; sourceTree = "<group>"; };
+		763E67C8265E4815002EFE0A /* DYHomeRecommentSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeRecommentSectionHeaderView.swift; sourceTree = "<group>"; };
+		763E67CA265E4E3A002EFE0A /* DYHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeNormalCell.swift; sourceTree = "<group>"; };
+		763E67CC265E4E4E002EFE0A /* DYHomePrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomePrettyCell.swift; sourceTree = "<group>"; };
+		763E67CE265E52C5002EFE0A /* DYHomeBaseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeBaseViewCell.swift; sourceTree = "<group>"; };
 		765883E6255A2D4D009AE13D /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765883FC255A2D4E009AE13D /* SwiftProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76588400255A2D4E009AE13D /* SwiftProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectTests.swift; sourceTree = "<group>"; };
@@ -124,9 +138,9 @@
 		765C20CB263A95520056D80F /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		765C20D2263A95CE0056D80F /* WBAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAccount.swift; sourceTree = "<group>"; };
 		765C20DE263A96130056D80F /* WBUserAccountTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBUserAccountTool.swift; sourceTree = "<group>"; };
-		7672662F26311FBB0053267F /* HomeBaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseListViewController.swift; sourceTree = "<group>"; };
-		7672663426311FFF0053267F /* HomeFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFocusViewController.swift; sourceTree = "<group>"; };
-		76726639263129310053267F /* HomeRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendViewController.swift; sourceTree = "<group>"; };
+		7672662F26311FBB0053267F /* FindBaseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBaseListViewController.swift; sourceTree = "<group>"; };
+		7672663426311FFF0053267F /* FindFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFocusViewController.swift; sourceTree = "<group>"; };
+		76726639263129310053267F /* FindRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRecommendViewController.swift; sourceTree = "<group>"; };
 		76740E78255CCE4900F9A576 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		76740E8F255CFAD700F9A576 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76740E94255CFB8B00F9A576 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -162,7 +176,7 @@
 		76B2E8FD256272850010ADC7 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		76B2E905256272940010ADC7 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		76B2E90A256272A10010ADC7 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
-		76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		76B2E90F256277E70010ADC7 /* FindDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDetailViewController.swift; sourceTree = "<group>"; };
 		76B2E92425628C730010ADC7 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		76B2E92C25628E5C0010ADC7 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		76B2E931256292940010ADC7 /* BaseNavigationController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNavigationController+NavigationBar.swift"; sourceTree = "<group>"; };
@@ -364,10 +378,6 @@
 			isa = PBXGroup;
 			children = (
 				765884AB255A3EE3009AE13D /* HomeViewController.swift */,
-				7672662F26311FBB0053267F /* HomeBaseListViewController.swift */,
-				7672663426311FFF0053267F /* HomeFocusViewController.swift */,
-				76726639263129310053267F /* HomeRecommendViewController.swift */,
-				76B2E90F256277E70010ADC7 /* HomeDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -486,6 +496,7 @@
 		7686CBF7265C9C2A00352ED2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				763E67C2265E1F0E002EFE0A /* DYBaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -548,6 +559,7 @@
 			isa = PBXGroup;
 			children = (
 				7686CC0F265CA24B00352ED2 /* UIBarButtonItem-Extension.swift */,
+				763E67C4265E2775002EFE0A /* NSDate+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -578,6 +590,7 @@
 			children = (
 				7686CC2B265D027F00352ED2 /* DYCycleModel.swift */,
 				7686CC2D265D02B100352ED2 /* DYRoomModel.swift */,
+				763E67C6265E2866002EFE0A /* DYAnchorGroup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -585,6 +598,10 @@
 		7686CC23265CD45800352ED2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				763E67C8265E4815002EFE0A /* DYHomeRecommentSectionHeaderView.swift */,
+				763E67CA265E4E3A002EFE0A /* DYHomeNormalCell.swift */,
+				763E67CC265E4E4E002EFE0A /* DYHomePrettyCell.swift */,
+				763E67CE265E52C5002EFE0A /* DYHomeBaseViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -633,6 +650,10 @@
 			isa = PBXGroup;
 			children = (
 				76B2E90A256272A10010ADC7 /* FindViewController.swift */,
+				7672662F26311FBB0053267F /* FindBaseListViewController.swift */,
+				7672663426311FFF0053267F /* FindFocusViewController.swift */,
+				76726639263129310053267F /* FindRecommendViewController.swift */,
+				76B2E90F256277E70010ADC7 /* FindDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -780,6 +801,7 @@
 				TargetAttributes = {
 					765883E5255A2D4D009AE13D = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1250;
 					};
 					765883FB255A2D4E009AE13D = {
 						CreatedOnToolsVersion = 12.1;
@@ -886,9 +908,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B2E910256277E70010ADC7 /* HomeDetailViewController.swift in Sources */,
+				76B2E910256277E70010ADC7 /* FindDetailViewController.swift in Sources */,
 				767FEAF8264E12250004F11C /* WBStatusPictureInfo.swift in Sources */,
 				767FEAEB264E11760004F11C /* WBStatus.swift in Sources */,
+				763E67CF265E52C5002EFE0A /* DYHomeBaseViewCell.swift in Sources */,
 				76B2E932256292940010ADC7 /* BaseNavigationController+NavigationBar.swift in Sources */,
 				7686CC2A265CDE3100352ED2 /* DYRecommendViewModel.swift in Sources */,
 				767FEB13264E23710004F11C /* WBStatusToolBar.swift in Sources */,
@@ -896,12 +919,13 @@
 				7658847A255A3ADF009AE13D /* AppDelegate.swift in Sources */,
 				7686CC1A265CCE8900352ED2 /* DYFunnyViewController.swift in Sources */,
 				7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */,
-				7672663526311FFF0053267F /* HomeFocusViewController.swift in Sources */,
+				7672663526311FFF0053267F /* FindFocusViewController.swift in Sources */,
 				76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */,
-				7672663A263129310053267F /* HomeRecommendViewController.swift in Sources */,
+				7672663A263129310053267F /* FindRecommendViewController.swift in Sources */,
 				76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */,
 				76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */,
 				76DBE0DC264CCCD40035D845 /* WBRecommendViewController.swift in Sources */,
+				763E67CD265E4E4E002EFE0A /* DYHomePrettyCell.swift in Sources */,
 				7686CC14265CCE5A00352ED2 /* DYRecommendViewController.swift in Sources */,
 				7686CC28265CDE0500352ED2 /* DYBaseViewModel.swift in Sources */,
 				7686CC10265CA24B00352ED2 /* UIBarButtonItem-Extension.swift in Sources */,
@@ -913,6 +937,7 @@
 				765C20CC263A95520056D80F /* OAuthViewController.swift in Sources */,
 				7686CC09265CA04A00352ED2 /* DYLiveViewController.swift in Sources */,
 				76DBE0D2264CCC910035D845 /* WBBaseListViewController.swift in Sources */,
+				763E67C9265E4815002EFE0A /* DYHomeRecommentSectionHeaderView.swift in Sources */,
 				7686CC20265CD1F700352ED2 /* Common.swift in Sources */,
 				767FEB06264E1C300004F11C /* WBStatusUserView.swift in Sources */,
 				76FB50D1255C0B2700296E32 /* HWMultipartData.swift in Sources */,
@@ -920,7 +945,8 @@
 				7686CC18265CCE7900352ED2 /* DYAmuseViewControllerViewController.swift in Sources */,
 				765884B6255A3FB6009AE13D /* ViewController.swift in Sources */,
 				767FEAF3264E11C60004F11C /* WBUser.swift in Sources */,
-				7672663026311FBB0053267F /* HomeBaseListViewController.swift in Sources */,
+				7672663026311FBB0053267F /* FindBaseListViewController.swift in Sources */,
+				763E67C7265E2866002EFE0A /* DYAnchorGroup.swift in Sources */,
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
 				76DBE0D7264CCCBF0035D845 /* WBFocusViewController.swift in Sources */,
 				7686CC03265C9F6400352ED2 /* DYHomeViewController.swift in Sources */,
@@ -939,16 +965,19 @@
 				7686CC0B265CA05600352ED2 /* DYFollowViewController.swift in Sources */,
 				7658849C255A3DAD009AE13D /* BaseTabBarController.swift in Sources */,
 				76740E95255CFB8B00F9A576 /* Comment.swift in Sources */,
+				763E67C3265E1F0E002EFE0A /* DYBaseModel.swift in Sources */,
 				7686CBFB265C9C9600352ED2 /* DYTabBarController.swift in Sources */,
 				7686CC2C265D027F00352ED2 /* DYCycleModel.swift in Sources */,
 				76740E79255CCE4900F9A576 /* HomeModel.swift in Sources */,
 				765C20D3263A95CE0056D80F /* WBAccount.swift in Sources */,
+				763E67CB265E4E3A002EFE0A /* DYHomeNormalCell.swift in Sources */,
 				76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */,
 				767FEB18264E4D050004F11C /* NSDate+WBExtension.swift in Sources */,
 				7658847D255A3ADF009AE13D /* ContentView.swift in Sources */,
 				7686CC01265C9E8E00352ED2 /* DYNavigationController.swift in Sources */,
 				765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */,
 				7658847C255A3ADF009AE13D /* BaseViewController.swift in Sources */,
+				763E67C5265E2775002EFE0A /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1146,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftProject/Classes/Others/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 7TQS22BE5V;
@@ -1131,6 +1161,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = niubility.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1142,6 +1173,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftProject/Classes/Others/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 7TQS22BE5V;

@@ -1,5 +1,5 @@
 //
-//  HomeFocusViewController.swift
+//  FindRecommendViewController.swift
 //  SwiftProject
 //
 //  Created by Charles on 2021/4/22.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class HomeFocusViewController: HomeBaseListViewController {
+class FindRecommendViewController: FindBaseListViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.green;
+
         // Do any additional setup after loading the view.
     }
     

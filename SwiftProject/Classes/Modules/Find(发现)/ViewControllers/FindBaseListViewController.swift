@@ -1,5 +1,5 @@
 //
-//  HomeBaseListViewController.swift
+//  FindBaseListViewController.swift
 //  SwiftProject
 //
 //  Created by Charles on 2021/4/22.
@@ -8,7 +8,7 @@
 import UIKit
 import JXSegmentedView
 
-class HomeBaseListViewController: BaseViewController {
+class FindBaseListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class HomeBaseListViewController: BaseViewController {
 }
 
 
-extension HomeBaseListViewController: JXSegmentedListContainerViewListDelegate {
+extension FindBaseListViewController: JXSegmentedListContainerViewListDelegate {
     func listView() -> UIView {
         return view
     }

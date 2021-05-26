@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DYCycleModel: NSObject {
+class DYCycleModel: DYBaseModel {
     // "id":221869,
     let id : Int = 0
     // "main_id":141359,

@@ -6,75 +6,69 @@
 //
 
 import UIKit
-import KakaJSON
-import SwiftyJSON
-import SnapKit
-import JXSegmentedView
 
-protocol DLNoNav {
+class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+
+    let dataArray = ["微博demo","斗鱼demo"]
     
-}
-
-class HomeViewController: BaseViewController,DLNoNav {
-
-    let segmentedDataSource = JXSegmentedTitleDataSource()
-    var segmentedView = JXSegmentedView()
     
-    lazy var listContainerView:JXSegmentedListContainerView! = {
-        return JXSegmentedListContainerView(dataSource: self)
+    private lazy var tableView: UITableView = {
+        let view = UITableView.init(frame: CGRect.zero, style: .plain)
+        view.tableFooterView = UIView()
+        view.delegate = self
+        view.dataSource = self
+        return view
     }()
     
-    lazy var items = [HomeModel]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.automaticallyAdjustsScrollViewInsets = false
+        self.view.addSubview(self.tableView)
+        self.tableView.frame = self.view.bounds
         
-        let titles = ["关注", "推荐"]
-        segmentedDataSource.titles = titles;
-        segmentedDataSource.titleNormalFont    = UIFont.systemFont(ofSize: 16);
-        segmentedDataSource.titleSelectedFont  = UIFont.boldSystemFont(ofSize: 18);
-        segmentedDataSource.titleNormalColor   = UIColor.lightGray
-        segmentedDataSource.titleSelectedColor = UIColor.black
-        segmentedDataSource.itemWidth = 60
-
-        segmentedView.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
-        segmentedView.delegate = self
-        segmentedView.dataSource = segmentedDataSource
-        navigationItem.titleView = segmentedView;
         
-        segmentedView.listContainer = listContainerView
-        view.addSubview(listContainerView)
-                
+        
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-//        segmentedView.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 50)
-        listContainerView.frame = CGRect(x: 0, y: 50, width: view.bounds.size.width, height: view.bounds.size.height - 50)
-    }
-}
-
-
-
-extension HomeViewController : JXSegmentedViewDelegate{
     
-}
-
-extension HomeViewController : JXSegmentedListContainerViewDataSource{
-    func numberOfLists(in listContainerView: JXSegmentedListContainerView) -> Int {
-        if let titleDataSource = segmentedView.dataSource as? JXSegmentedBaseDataSource {
-            return titleDataSource.dataSource.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataArray.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "FindCell")
+        if cell == nil {
+            cell = UITableViewCell.init(style: .default, reuseIdentifier: "FindCell")
         }
-        return 0
+        cell?.textLabel?.text = self.dataArray[indexPath.row]
+        return cell!
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let title = self.dataArray[indexPath.row]
+        if title == "微博demo" {
+            self.pushWeiboViewController()
+        } else if title == "斗鱼demo" {
+            let tabbar = DYTabBarController()
+            navigationController?.navigationBar.isHidden = true
+            navigationController?.pushViewController(tabbar, animated: true)
+        }
+        
+    }
+    
+    func pushWeiboViewController(){
+        /// 如果有授权信息去 WBTabBarController，否则去 OAuthViewController
+        
+        if WBUserAccountTool.shareUserAccount.isLogin {
+            
+            self.navigationController?.pushViewController(WBTabBarController(), animated: true)
+            return
+        }
+        self.navigationController?.pushViewController(OAuthViewController(), animated: true)
     }
 
-    func listContainerView(_ listContainerView: JXSegmentedListContainerView, initListAt index: Int) -> JXSegmentedListContainerViewListDelegate {
-        if index == 0 {
-            return HomeFocusViewController()
-        }
-        return HomeRecommendViewController()
-    }
 }
+
+
 
