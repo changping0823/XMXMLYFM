@@ -26,6 +26,7 @@ class DYHomeBaseViewCell: UICollectionViewCell {
     lazy var coverView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 5.0
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()

@@ -46,13 +46,12 @@ class WBStatusCell: UITableViewCell {
             make.top.equalTo(userView.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
-            make.height.equalTo(100)
         }
         toolBar.snp.makeConstraints { (make) in
             make.top.equalTo(statusView.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
-            make.height.equalTo(100)
+            make.height.equalTo(40)
             make.bottom.equalToSuperview()
         }
     }

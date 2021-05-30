@@ -14,6 +14,7 @@ class WBFocusViewController: WBBaseListViewController {
 
     private lazy var tableView : UITableView = {
         let view = UITableView.init(frame: CGRect.zero, style: .plain)
+        view.separatorStyle = .none
         view.delegate = self
         view.dataSource = self
         return view
@@ -34,7 +35,7 @@ class WBFocusViewController: WBBaseListViewController {
             "access_token": WBUserAccountTool.shareUserAccount.accessToken!
         ]
         Network.GET(url: url, parameters: params).success { (response) in
-            print(response)
+//            print(response)
             
             guard let dic = response as? [String: AnyObject] else {
                 print("字典格式不正确")

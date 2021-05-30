@@ -17,6 +17,7 @@ class WBStatusContentView: UIView {
             make.top.equalToSuperview().offset(10)
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
+            make.bottom.equalToSuperview().offset(-10)
         }
     }
     
@@ -26,8 +27,8 @@ class WBStatusContentView: UIView {
     
     var status: Status? {
         didSet {
-            
-            contentLabel.text = status?.text
+            let attr = EmojiPrase.emojiAttr(emojiText: status?.text ?? "", font: contentLabel.font)
+            contentLabel.attributedText = attr
         }
     }
     

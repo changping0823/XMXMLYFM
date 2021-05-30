@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		17D65A5B61EA6365C8C0808E /* Pods_SwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6ABCD023AAA32A2A8879E7 /* Pods_SwiftProject.framework */; };
+		6D4639842663342600CAD21B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4639832663342600CAD21B /* Assets.xcassets */; };
+		6D463986266335A200CAD21B /* emoticon_content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D463985266335A200CAD21B /* emoticon_content.plist */; };
+		6D4639882663386500CAD21B /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4639872663386500CAD21B /* EmojiModel.swift */; };
+		6D46398B26633B3E00CAD21B /* EmojiPrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46398A26633B3E00CAD21B /* EmojiPrase.swift */; };
+		6D46398D26633DC900CAD21B /* EmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46398C26633DC900CAD21B /* EmojiManager.swift */; };
+		6D46398F26633E1B00CAD21B /* EmojiPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46398E26633E1B00CAD21B /* EmojiPackage.swift */; };
+		6D4639912663414100CAD21B /* Emoji.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D4639902663414100CAD21B /* Emoji.bundle */; };
 		6DAD24072652AE53004E8005 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAD24062652AE53004E8005 /* Status.swift */; };
 		7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */; };
 		7625B5602643B58E00D38A6F /* WBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625B55F2643B58E00D38A6F /* WBTabBarController.swift */; };
@@ -105,6 +112,13 @@
 
 /* Begin PBXFileReference section */
 		38BA60AB81EA347336B5B790 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4639832663342600CAD21B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D463985266335A200CAD21B /* emoticon_content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoticon_content.plist; sourceTree = "<group>"; };
+		6D4639872663386500CAD21B /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
+		6D46398A26633B3E00CAD21B /* EmojiPrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPrase.swift; sourceTree = "<group>"; };
+		6D46398C26633DC900CAD21B /* EmojiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiManager.swift; sourceTree = "<group>"; };
+		6D46398E26633E1B00CAD21B /* EmojiPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPackage.swift; sourceTree = "<group>"; };
+		6D4639902663414100CAD21B /* Emoji.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoji.bundle; sourceTree = "<group>"; };
 		6DAD24062652AE53004E8005 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		7625B55A2643B55B00D38A6F /* WBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
 		7625B55F2643B58E00D38A6F /* WBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTabBarController.swift; sourceTree = "<group>"; };
@@ -217,6 +231,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D46386D266333E600CAD21B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D4639902663414100CAD21B /* Emoji.bundle */,
+				6D463985266335A200CAD21B /* emoticon_content.plist */,
+				6D4639832663342600CAD21B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D46398926633B2000CAD21B /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				6D4639872663386500CAD21B /* EmojiModel.swift */,
+				6D46398A26633B3E00CAD21B /* EmojiPrase.swift */,
+				6D46398C26633DC900CAD21B /* EmojiManager.swift */,
+				6D46398E26633E1B00CAD21B /* EmojiPackage.swift */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
 		765883DD255A2D4D009AE13D = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +462,7 @@
 		765C20DD263A95F60056D80F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6D46398926633B2000CAD21B /* Emoji */,
 				765C20DE263A96130056D80F /* WBUserAccountTool.swift */,
 				767FEB17264E4D050004F11C /* NSDate+WBExtension.swift */,
 			);
@@ -693,6 +729,7 @@
 				767FEAFC264E19F80004F11C /* Views */,
 				765C20D0263A95AF0056D80F /* Models */,
 				765C20DD263A95F60056D80F /* Tools */,
+				6D46386D266333E600CAD21B /* Resources */,
 			);
 			path = "微博";
 			sourceTree = "<group>";
@@ -838,10 +875,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D463986266335A200CAD21B /* emoticon_content.plist in Resources */,
 				76588478255A3ADF009AE13D /* LaunchScreen.storyboard in Resources */,
 				76588477255A3ADF009AE13D /* Preview Assets.xcassets in Resources */,
 				7686CBFD265C9DD600352ED2 /* douyu.xcassets in Resources */,
+				6D4639842663342600CAD21B /* Assets.xcassets in Resources */,
 				76588476255A3ADF009AE13D /* Assets.xcassets in Resources */,
+				6D4639912663414100CAD21B /* Emoji.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +961,7 @@
 				7625B55B2643B55B00D38A6F /* WBBaseViewController.swift in Sources */,
 				7672663526311FFF0053267F /* FindFocusViewController.swift in Sources */,
 				76B2E90B256272A10010ADC7 /* FindViewController.swift in Sources */,
+				6D46398D26633DC900CAD21B /* EmojiManager.swift in Sources */,
 				7672663A263129310053267F /* FindRecommendViewController.swift in Sources */,
 				76740E9B255CFC7B00F9A576 /* HomeCell.swift in Sources */,
 				76B2E92525628C730010ADC7 /* UIColor+Image.swift in Sources */,
@@ -944,12 +985,14 @@
 				765884A4255A3DC5009AE13D /* BaseNavigationController.swift in Sources */,
 				7686CC18265CCE7900352ED2 /* DYAmuseViewControllerViewController.swift in Sources */,
 				765884B6255A3FB6009AE13D /* ViewController.swift in Sources */,
+				6D46398F26633E1B00CAD21B /* EmojiPackage.swift in Sources */,
 				767FEAF3264E11C60004F11C /* WBUser.swift in Sources */,
 				7672663026311FBB0053267F /* FindBaseListViewController.swift in Sources */,
 				763E67C7265E2866002EFE0A /* DYAnchorGroup.swift in Sources */,
 				76740E90255CFAD700F9A576 /* User.swift in Sources */,
 				76DBE0D7264CCCBF0035D845 /* WBFocusViewController.swift in Sources */,
 				7686CC03265C9F6400352ED2 /* DYHomeViewController.swift in Sources */,
+				6D46398B26633B3E00CAD21B /* EmojiPrase.swift in Sources */,
 				76FB50BC255BB23200296E32 /* NetworkTool.swift in Sources */,
 				765884B1255A3F12009AE13D /* MineViewController.swift in Sources */,
 				7686CC2E265D02B100352ED2 /* DYRoomModel.swift in Sources */,
@@ -973,6 +1016,7 @@
 				763E67CB265E4E3A002EFE0A /* DYHomeNormalCell.swift in Sources */,
 				76CBFFD2263BE260008157B7 /* WBUserAccountViewModel.swift in Sources */,
 				767FEB18264E4D050004F11C /* NSDate+WBExtension.swift in Sources */,
+				6D4639882663386500CAD21B /* EmojiModel.swift in Sources */,
 				7658847D255A3ADF009AE13D /* ContentView.swift in Sources */,
 				7686CC01265C9E8E00352ED2 /* DYNavigationController.swift in Sources */,
 				765884AC255A3EE3009AE13D /* HomeViewController.swift in Sources */,
